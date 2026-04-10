@@ -1,0 +1,903 @@
+﻿country,areatype,areacode,areaname,alternateareaname,areaid
+Argentina,CFP,ARG-N,Northern Argentina,NA,Argentina-CFP-ARG-N
+Argentina,CFP,ARG-S,Southern Argentina,NA,Argentina-CFP-ARG-S
+Australia,AFMA,CASCADE,Cascade Plateau,NA,Australia-AFMA-CASCADE
+Australia,AFMA,EAUS,Eastern Australia,NA,Australia-AFMA-EAUS
+Australia,AFMA,ESE,Eastern half of Southeast Australia,NA,Australia-AFMA-ESE
+Australia,AFMA,GAB,Great Australian Bight,NA,Australia-AFMA-GAB
+Australia,AFMA,MI,Macquarie Island,,Australia-AFMA-MI
+Australia,AFMA,NAUST,Northern Australia,NA,Australia-AFMA-NAUST
+Australia,AFMA,NSWWA,New South Wales to Western Australia,NA,Australia-AFMA-NSWWA
+Australia,AFMA,SE,Southeast Australia,NA,Australia-AFMA-SE
+Australia,AFMA,TAS,Tasmania,NA,Australia-AFMA-TAS
+Australia,AFMA,WSE,Western half of Southeast Australia,NA,Australia-AFMA-WSE
+Australia,DPIF,QNSW,Queensland and New South Wales,NA,Australia-DPIF-QNSW
+Australia,SARDI,SAUSGSV,Gulf St. Vincent,NA,Australia-SARDI-SAUSGSV
+Australia,SARDI,SAUSNSG,Northern Spencer Gulf,NA,Australia-SARDI-SAUSNSG
+Australia,SARDI,SAUSNZ,South Australia Northern Zone,NA,Australia-SARDI-SAUSNZ
+Australia,SARDI,SAUSSER,South-East Region,NA,Australia-SARDI-SAUSSER
+Australia,SARDI,SAUSSGSV,Southern Gulf St. Vincent,NA,Australia-SARDI-SAUSSGSV
+Australia,SARDI,SAUSSGWC,Spencer Gulf and West Coast,NA,Australia-SARDI-SAUSSGWC
+Australia,SARDI,SAUSSSG,Southern Spencer Gulf,NA,Australia-SARDI-SAUSSSG
+Australia,SARDI,SAUSSZ,South Australia Southern Zone,NA,Australia-SARDI-SAUSSZ
+Australia,SARDI,WSE,Western half of Southeast Australia,NA,Australia-SARDI-WSE
+Canada,DFO,23K,Labrador - NE Newfoundland,NA,Canada-DFO-23K
+Canada,DFO,2G-3K,NAFO Divisions 2G-3K,NA,Canada-DFO-2G-3K
+Canada,DFO,2HJ,Division 2HJ,NA,Canada-DFO-2HJ
+Canada,DFO,2HJ3KLNOP4R,Division 2HJ3KLNOP4R,NA,Canada-DFO-2HJ3KLNOP4R
+Canada,DFO,2J,Division 2J,NA,Canada-DFO-2J
+Canada,DFO,2J3K,NAFO Division 2J3K,NA,Canada-DFO-2J3K
+Canada,DFO,2J3K-3LNO,NAFO Divisions 2J3K-3LNO,NA,Canada-DFO-2J3K-3LNO
+Canada,DFO,2J3KL,Southern Labrador-Eastern Newfoundland,NA,Canada-DFO-2J3KL
+Canada,DFO,2J3KLNOPs,Labrador Shelf-Grand Banks-St. Pierre Bank,NA,Canada-DFO-2J3KLNOPs
+Canada,DFO,3K,Division 3K,NA,Canada-DFO-3K
+Canada,DFO,3LNO,Division 3LNO,NA,Canada-DFO-3LNO
+Canada,DFO,3LNOPs,NAFO Divisions 3LNOPs,NA,Canada-DFO-3LNOPs
+Canada,DFO,3LNO-UT12,NAFO Division 3LNO and Units 1 and 2,NA,Canada-DFO-3LNO-UT12
+Canada,DFO,3NO,Division 3NO,NA,Canada-DFO-3NO
+Canada,DFO,3NOPs4VWX5Zc,Scotian Shelf and Southern Grand Banks,NA,Canada-DFO-3NOPs4VWX5Zc
+Canada,DFO,3Pn4RS,Northern Gulf of St. Lawrence,NA,Canada-DFO-3Pn4RS
+Canada,DFO,3Pn4RSTVn,Gulf of St. Lawrence and Cabot Strait,NA,Canada-DFO-3Pn4RSTVn
+Canada,DFO,3Ps,St. Pierre Bank,NA,Canada-DFO-3Ps
+Canada,DFO,4R,NAFO division 4R,NA,Canada-DFO-4R
+Canada,DFO,4R3Pn,Division 4R3Pn,NA,Canada-DFO-4R3Pn
+Canada,DFO,4RFS,NAFO division 4R (Fall spawners),NA,Canada-DFO-4RFS
+Canada,DFO,4RS,Northern Gulf of St. Lawrence,NA,Canada-DFO-4RS
+Canada,DFO,4RSS,NAFO division 4R (Spring spawners),NA,Canada-DFO-4RSS
+Canada,DFO,4RST,Gulf of St. Lawrence,NA,Canada-DFO-4RST
+Canada,DFO,4S,Quebec North Shore,NA,Canada-DFO-4S
+Canada,DFO,4SFS,Quebec North Shore (Fall spawners),NA,Canada-DFO-4SFS
+Canada,DFO,4SSS,Quebec North Shore (Spring spawners),NA,Canada-DFO-4SSS
+Canada,DFO,4T,Southern Gulf of St. Lawrence,NA,Canada-DFO-4T
+Canada,DFO,4TFS,Southern Gulf of St. Lawrence (Fall spawners),NA,Canada-DFO-4TFS
+Canada,DFO,4TSS,Southern Gulf of St. Lawrence (Spring spawners),NA,Canada-DFO-4TSS
+Canada,DFO,4TVn,Southern Gulf of St. Lawrence and Cabot Strait,NA,Canada-DFO-4TVn
+Canada,DFO,4Vn,Cabot Strait,NA,Canada-DFO-4Vn
+Canada,DFO,4VsW,Eastern Scotian Shelf,NA,Canada-DFO-4VsW
+Canada,DFO,4VWX,Scotian Shelf and Bay of Fundy,NA,Canada-DFO-4VWX
+Canada,DFO,4VWX5,"Scotian Shelf, Bay of Fundy and Georges Bank",NA,Canada-DFO-4VWX5
+Canada,DFO,4VWX5Zc,"Scotian Shelf, Bay of Fundy and Georges Bank",NA,Canada-DFO-4VWX5Zc
+Canada,DFO,4X,Western Scotian Shelf,NA,Canada-DFO-4X
+Canada,DFO,4X5Y,"Western Scotian Shelf, Bay of Fundy and Gulf of Maine",NA,Canada-DFO-4X5Y
+Canada,DFO,4X5Yb,"Western Scotian Shelf, Bay of Fundy and Gulf of Maine",NA,Canada-DFO-4X5Yb
+Canada,DFO,4X5YZ,"Western Scotian Shelf, Bay of Fundy, Gulf of Maine and Georges Bank",NA,Canada-DFO-4X5YZ
+Canada,DFO,5AB,Queen Charlotte Sound,NA,Canada-DFO-5AB
+Canada,DFO,5ABCD,British Columbia Waters Area 5ABCD,NA,Canada-DFO-5ABCD
+Canada,DFO,5Z,Georges Bank,NA,Canada-DFO-5Z
+Canada,DFO,5Zejm,Georges Bank,NA,Canada-DFO-5Zejm
+Canada,DFO,A1,Area 1,NA,Canada-DFO-A1
+Canada,DFO,A10,Area 10,NA,Canada-DFO-A10
+Canada,DFO,A11,Area 11,NA,Canada-DFO-A11
+Canada,DFO,A12,Area 12,NA,Canada-DFO-A12
+Canada,DFO,A13,Area 13,NA,Canada-DFO-A13
+Canada,DFO,A14,Area 14,NA,Canada-DFO-A14
+Canada,DFO,A15,Area 15,NA,Canada-DFO-A15
+Canada,DFO,A16,Area 16,NA,Canada-DFO-A16
+Canada,DFO,A17,Area 17,NA,Canada-DFO-A17
+Canada,DFO,A18,Area 18,NA,Canada-DFO-A18
+Canada,DFO,A19,Area 19,NA,Canada-DFO-A19
+Canada,DFO,A20,Area 20,NA,Canada-DFO-A20
+Canada,DFO,A21-27,Area21-27,NA,Canada-DFO-A21-27
+Canada,DFO,A22,Area 22,NA,Canada-DFO-A22
+Canada,DFO,A23,Area 23,NA,Canada-DFO-A23
+Canada,DFO,A24,Area 24,NA,Canada-DFO-A24
+Canada,DFO,A25,Area 25,NA,Canada-DFO-A25
+Canada,DFO,A26,Area 26,NA,Canada-DFO-A26
+Canada,DFO,A27,Area 27,NA,Canada-DFO-A27
+Canada,DFO,A28,Area 28,NA,Canada-DFO-A28
+Canada,DFO,A29,Area 29,NA,Canada-DFO-A29
+Canada,DFO,A2E,Area 2E,NA,Canada-DFO-A2E
+Canada,DFO,A2W,Area 2W,NA,Canada-DFO-A2W
+Canada,DFO,A3,Area 3,NA,Canada-DFO-A3
+Canada,DFO,A4,Area 4,NA,Canada-DFO-A4
+Canada,DFO,A5,Area 5,NA,Canada-DFO-A5
+Canada,DFO,A6,Area 6,NA,Canada-DFO-A6
+Canada,DFO,A7,Area 7,NA,Canada-DFO-A7
+Canada,DFO,A8,Area 8,NA,Canada-DFO-A8
+Canada,DFO,A9,Area 9,NA,Canada-DFO-A9
+Canada,DFO,ADAMS,Adams,NA,Canada-DFO-ADAMS
+Canada,DFO,ATL,Canadian Atlantic Ocean,NA,Canada-DFO-ATL
+Canada,DFO,ATNARKO,Atnarko (Area 8),NA,Canada-DFO-ATNARKO
+Canada,DFO,BANQ,Banquereau,NA,Canada-DFO-BANQ
+Canada,DFO,BARKS,Barkley Sound,NA,Canada-DFO-BARKS
+Canada,DFO,BCW,British Columbia Waters,NA,Canada-DFO-BCW
+Canada,DFO,BCWN,British Columbia Waters North,NA,Canada-DFO-BCWN
+Canada,DFO,BCWS,British Columbia Waters South,NA,Canada-DFO-BCWS
+Canada,DFO,BIRKENH,Birkenhead,NA,Canada-DFO-BIRKENH
+Canada,DFO,BONDS,BondSound (Area 12),NA,Canada-DFO-BONDS
+Canada,DFO,BOWRON,Bowron,NA,Canada-DFO-BOWRON
+Canada,DFO,BURR,Burrard,NA,Canada-DFO-BURR
+Canada,DFO,BUTEI,Bute Inlt (Area 13),NA,Canada-DFO-BUTEI
+Canada,DFO,BWLAB,BetwLoandBte (Area 13),NA,Canada-DFO-BWLAB
+Canada,DFO,CAYENNE,cayenne,NA,Canada-DFO-CAYENNE
+Canada,DFO,CC,Central Coast,NA,Canada-DFO-CC
+Canada,DFO,CHILKO,Chilko,NA,Canada-DFO-CHILKO
+Canada,DFO,CHILKOS,Chilko South,NA,Canada-DFO-CHILKOS
+Canada,DFO,CHILLIW,chilliwack,NA,Canada-DFO-CHILLIW
+Canada,DFO,CHV,Ch/Vedder,NA,Canada-DFO-CHV
+Canada,DFO,CULTUS,Cultus,NA,Canada-DFO-CULTUS
+Canada,DFO,FENNELL,fennell,NA,Canada-DFO-FENNELL
+Canada,DFO,GATES,Gates,NA,Canada-DFO-GATES
+Canada,DFO,GATESC,Gates Channel,NA,Canada-DFO-GATESC
+Canada,DFO,GEOHOWE,GeorgiaHowe (Area 16),NA,Canada-DFO-GEOHOWE
+Canada,DFO,HARR,Harrison,NA,Canada-DFO-HARR
+Canada,DFO,HARRISON,harrison,NA,Canada-DFO-HARRISON
+Canada,DFO,HG,Haida Gwaii,NA,Canada-DFO-HG
+Canada,DFO,HOMFROY,Homfroy C (Area 15),NA,Canada-DFO-HOMFROY
+Canada,DFO,HOOKC,Hooknose Creek,NA,Canada-DFO-HOOKC
+Canada,DFO,HORSEFLY,Horsefly,NA,Canada-DFO-HORSEFLY
+Canada,DFO,HS,Hecate Strait,NA,Canada-DFO-HS
+Canada,DFO,ICBC,Inshore Coast of British Columbia,NA,Canada-DFO-ICBC
+Canada,DFO,IDLM,Iles-de-la-Madeleine,NA,Canada-DFO-IDLM
+Canada,DFO,IQCU3,Inshore Quebec Unit 3,NA,Canada-DFO-IQCU3
+Canada,DFO,IQCUB,Inshore Quebec Unit B,NA,Canada-DFO-IQCUB
+Canada,DFO,IQCUC,Inshore Quebec Unit C,NA,Canada-DFO-IQCUC
+Canada,DFO,ISCFPM,Inner South Coast (Fraser plus Mainland),NA,Canada-DFO-ISCFPM
+Canada,DFO,JERVISI,Jervis Inlet (Area 16),NA,Canada-DFO-JERVISI
+Canada,DFO,JOHNS,JohnstoneSt (Area 12),NA,Canada-DFO-JOHNS
+Canada,DFO,JOHNST,Johnst St (Area 13),NA,Canada-DFO-JOHNST
+Canada,DFO,KIMSQUIT,Kimsquit,NA,Canada-DFO-KIMSQUIT
+Canada,DFO,KINGCOME,KingcomeInlet (Area 12),NA,Canada-DFO-KINGCOME
+Canada,DFO,KITLOPE,Kitlope,NA,Canada-DFO-KITLOPE
+Canada,DFO,KNIGHT,KnightInlet (Area 12),NA,Canada-DFO-KNIGHT
+Canada,DFO,LFA15-18,Quebec North Shore and Anticosti Island (LFA 15-18),NA,Canada-DFO-LFA15-18
+Canada,DFO,LFA19-21,Gaspe (LFA 19-21),NA,Canada-DFO-LFA19-21
+Canada,DFO,LFA22,Magdalen Islands (LFA 22),NA,Canada-DFO-LFA22
+Canada,DFO,LFA23-26AB,Southern Gulf of St. Lawrence,NA,Canada-DFO-LFA23-26AB
+Canada,DFO,LFA27-33,Atlantic Coast of Nova Scotia (LFA 27-33),NA,Canada-DFO-LFA27-33
+Canada,DFO,LFA3-14,Lobster Fishing Areas 3-14,NA,Canada-DFO-LFA3-14
+Canada,DFO,LFA34,Lobster Fishing Area 34,NA,Canada-DFO-LFA34
+Canada,DFO,LFA35-38,Lobster Fishing Areas 35-38,NA,Canada-DFO-LFA35-38
+Canada,DFO,LFA41,Lobster Fishing Area 41,NA,Canada-DFO-LFA41
+Canada,DFO,LLAKE,Long Lake,NA,Canada-DFO-LLAKE
+Canada,DFO,LOUGHB,Loughb It (Area 13),NA,Canada-DFO-LOUGHB
+Canada,DFO,LSTUART,Late Stuart,NA,Canada-DFO-LSTUART
+Canada,DFO,MALAS,Malaspina (Area 15),NA,Canada-DFO-MALAS
+Canada,DFO,MFRASE,Main Fraser,NA,Canada-DFO-MFRASE
+Canada,DFO,MITCHELL,Mitchell,NA,Canada-DFO-MITCHELL
+Canada,DFO,NADINA,Nadina,NA,Canada-DFO-NADINA
+Canada,DFO,NADINAC,Nadina Channel,NA,Canada-DFO-NADINAC
+Canada,DFO,NAHANTLATCH,nahatlatch,NA,Canada-DFO-NAHANTLATCH
+Canada,DFO,NASS,Nass,NA,Canada-DFO-NASS
+Canada,DFO,NBB,North Brown Bank,NA,Canada-DFO-NBB
+Canada,DFO,NENS,North-Eastern Nova Scotia,NA,Canada-DFO-NENS
+Canada,DFO,NFLDESC,Newfoundland East and South Coast,NA,Canada-DFO-NFLDESC
+Canada,DFO,NKINGCOME,NearKingcome (Area 12),NA,Canada-DFO-NKINGCOME
+Canada,DFO,NUNE,Nunavut/Nunavik East,NA,Canada-DFO-NUNE
+Canada,DFO,NUNW,Nunavut/Nunavik West,NA,Canada-DFO-NUNW
+Canada,DFO,NWATLSA3-4,Northwest Atlantic (NAFO Subareas 3 and 4),NA,Canada-DFO-NWATLSA3-4
+Canada,DFO,OWIKENOL,Owikeno Lake,NA,Canada-DFO-OWIKENOL
+Canada,DFO,PCOAST,Pacific Coast of Canada,,Canada-DFO-PCOAST
+Canada,DFO,PCOASTCCDU,Pacific Coast of Canada Central Coast Designatable Unit,NA,Canada-DFO-PCOASTCCDU
+Canada,DFO,PCOASTFRDU,Pacific Coast of Canada Fraser River Designatable Unit,NA,Canada-DFO-PCOASTFRDU
+Canada,DFO,PCOASTIN,Pacific Coast of Canada (Inside),,Canada-DFO-PCOASTIN
+Canada,DFO,PCOASTNSDU,Pacific Coast of Canada Nass / Skeena Designatable Unit,NA,Canada-DFO-PCOASTNSDU
+Canada,DFO,PCOASTOUT,Pacific Coast of Canada (Outside),,Canada-DFO-PCOASTOUT
+Canada,DFO,PITT,Pitt,NA,Canada-DFO-PITT
+Canada,DFO,PORTAGE,Portage,NA,Canada-DFO-PORTAGE
+Canada,DFO,PRD,Prince Rupert District,NA,Canada-DFO-PRD
+Canada,DFO,Q4RST,Quebec and Gulf of St. Lawrence,NA,Canada-DFO-Q4RST
+Canada,DFO,QCI,Queen Charlotte Islands,Haida Gwaii,Canada-DFO-QCI
+Canada,DFO,QCW,Quebec Coastal Waters,NA,Canada-DFO-QCW
+Canada,DFO,QUATR,Quatam R (Area 13),NA,Canada-DFO-QUATR
+Canada,DFO,RAFT,Raft,NA,Canada-DFO-RAFT
+Canada,DFO,SCFA16-20,Scallop Fishing Areas 16-20,NA,Canada-DFO-SCFA16-20
+Canada,DFO,SCMA12-17,Northern Gulf of St. Lawrence,NA,Canada-DFO-SCMA12-17
+Canada,DFO,SCOTCH,scotch,NA,Canada-DFO-SCOTCH
+Canada,DFO,SECHELT,Sechelt It  (Area 16),NA,Canada-DFO-SECHELT
+Canada,DFO,SENS,South-Eastern Nova Scotia,NA,Canada-DFO-SENS
+Canada,DFO,SETONA,SetonArea,NA,Canada-DFO-SETONA
+Canada,DFO,SEYMOUR,Seymour,NA,Canada-DFO-SEYMOUR
+Canada,DFO,SFA10,Shrimp Fishing Area 10,NA,Canada-DFO-SFA10
+Canada,DFO,SFA12,Shrimp Fishing Area 12,NA,Canada-DFO-SFA12
+Canada,DFO,SFA13-15,Eastern Scotian Shelf (SFA 13-15),NA,Canada-DFO-SFA13-15
+Canada,DFO,SFA2-3,Shrimp Fishing Areas 2-3,NA,Canada-DFO-SFA2-3
+Canada,DFO,SFA4,Shrimp Fishing Area 4,NA,Canada-DFO-SFA4
+Canada,DFO,SFA5,Shrimp Fishing Area 5,NA,Canada-DFO-SFA5
+Canada,DFO,SFA6,Shrimp Fishing Area 6,NA,Canada-DFO-SFA6
+Canada,DFO,SFA8,Shrimp Fishing Area 8,NA,Canada-DFO-SFA8
+Canada,DFO,SFA9,Shrimp Fishing Area 9,NA,Canada-DFO-SFA9
+Canada,DFO,SHUSWAP,shuswap,NA,Canada-DFO-SHUSWAP
+Canada,DFO,SKEENA,Skeena,NA,Canada-DFO-SKEENA
+Canada,DFO,SKEENALR,Skeena/Lakelse River,NA,Canada-DFO-SKEENALR
+Canada,DFO,SKIDEGATE,Skidegate,NA,Canada-DFO-SKIDEGATE
+Canada,DFO,SLIAMMON,Sliammon (Area 15),NA,Canada-DFO-SLIAMMON
+Canada,DFO,SMA-14,Shrimp Management Area 14,NA,Canada-DFO-SMA-14
+Canada,DFO,SMA-16,Shrimp Management Area 16,NA,Canada-DFO-SMA-16
+Canada,DFO,SMA-18-19,Shrimp Management Areas 18 and 19,NA,Canada-DFO-SMA-18-19
+Canada,DFO,SMA-FR,Shrimp Management Area FR,NA,Canada-DFO-SMA-FR
+Canada,DFO,SMA-GTSE,Shrimp Management Area GTSE,NA,Canada-DFO-SMA-GTSE
+Canada,DFO,SMA-PRD,Shrimp Management Area PRD,NA,Canada-DFO-SMA-PRD
+Canada,DFO,SOG,Strait of Georgia,NA,Canada-DFO-SOG
+Canada,DFO,SPA1-6,Bay of Fundy (SPA 1-6),NA,Canada-DFO-SPA1-6
+Canada,DFO,SQUAMISH,Squamish,NA,Canada-DFO-SQUAMISH
+Canada,DFO,STELLAKO,Stellako,NA,Canada-DFO-STELLAKO
+Canada,DFO,SUNDC,SundChnl (Area 13),NA,Canada-DFO-SUNDC
+Canada,DFO,SUTILC,Sutil Chnl (Area 13),NA,Canada-DFO-SUTILC
+Canada,DFO,TASEKO,taseko,NA,Canada-DFO-TASEKO
+Canada,DFO,THOMPSON,Thompson,NA,Canada-DFO-THOMPSON
+Canada,DFO,TOBAI,Toba Inlt (Area 15),NA,Canada-DFO-TOBAI
+Canada,DFO,UT1,Unit 1,NA,Canada-DFO-UT1
+Canada,DFO,UT12,Units 1 and 2,NA,Canada-DFO-UT12
+Canada,DFO,UT2,Unit 2,NA,Canada-DFO-UT2
+Canada,DFO,UT3,Unit 3,NA,Canada-DFO-UT3
+Canada,DFO,VANCI,VancIsland (Area 13),NA,Canada-DFO-VANCI
+Canada,DFO,WCVANI,West Coast of Vancouver Island,NA,Canada-DFO-WCVANI
+Canada,DFO,WCVANI-SOG-QCI,West Coast of Vancouver Island and Strait of Georgia and Queen Charlotte Islands,,Canada-DFO-WCVANI-SOG-QCI
+Canada,DFO,WEAVER,Weaver,NA,Canada-DFO-WEAVER
+Canada,DFO,WEAVERC,Weaver Channel,NA,Canada-DFO-WEAVERC
+Canada,DFO,WSFA29,West Scallop Fishing Area 29,NA,Canada-DFO-WSFA29
+Canada,DFO,YAKOUN,Yakoun,NA,Canada-DFO-YAKOUN
+Chile,SUBPESCA,CH,Chile,NA,Chile-SUBPESCA-CH
+Chile,SUBPESCA,CH-C,Central Chile,NA,Chile-SUBPESCA-CH-C
+Chile,SUBPESCA,CH-CS,Central-Southern Chile,NA,Chile-SUBPESCA-CH-CS
+Chile,SUBPESCA,CH-N,Northern Chile,NA,Chile-SUBPESCA-CH-N
+Chile,SUBPESCA,CH-S,Southern Chile,NA,Chile-SUBPESCA-CH-S
+Chile,SUBPESCA,CHV-X,Chile Region V-X,NA,Chile-SUBPESCA-CHV-X
+Chile,SUBPESCA,NCH,North Chilean EEZ and offshore,NA,Chile-SUBPESCA-NCH
+Chile,SUBPESCA,NCH-SP,Northern Chile Southern Peru,NA,Chile-SUBPESCA-NCH-SP
+Chile,SUBPESCA,SCH,South Chilean EEZ and offshore,NA,Chile-SUBPESCA-SCH
+Chile,SUBPESCA,V-X,Chilean EEZ and offshore region V-X,NA,Chile-SUBPESCA-V-X
+Iran,Iran,CS,Iranian Caspian Sea,,Iran-Iran-CS
+Japan,FAJ,ECS,East China Sea,NA,Japan-FAJ-ECS
+Japan,FAJ,ESJ,Sea of Japan East,NA,Japan-FAJ-ESJ
+Japan,FAJ,HOKK,Hokkaido,NA,Japan-FAJ-HOKK
+Japan,FAJ,HSCH,Japan High Seas catch chum hatchery,NA,Japan-FAJ-HSCH
+Japan,FAJ,HSCW,Japan High Seas catch chum wild,NA,Japan-FAJ-HSCW
+Japan,FAJ,HSPH,Japan High Seas catch pink hatchery,NA,Japan-FAJ-HSPH
+Japan,FAJ,HSPW,Japan High Seas catch pink wild,NA,Japan-FAJ-HSPW
+Japan,FAJ,HSSH,Japan High Seas catch sockeye hatchery,NA,Japan-FAJ-HSSH
+Japan,FAJ,HSSW,Japan High Seas catch sockeye wild,NA,Japan-FAJ-HSSW
+Japan,FAJ,IMKB,Ise and Mikawa Bay,NA,Japan-FAJ-IMKB
+Japan,FAJ,JCCH,Japan coastal chum hatchery,NA,Japan-FAJ-JCCH
+Japan,FAJ,JCPH,Japan coastal pink hatchery,NA,Japan-FAJ-JCPH
+Japan,FAJ,JCPW,Japan coastal pink wild,NA,Japan-FAJ-JCPW
+Japan,FAJ,JPN,Japan,NA,Japan-FAJ-JPN
+Japan,FAJ,JPNAR,Japan Autumn recruitment,NA,Japan-FAJ-JPNAR
+Japan,FAJ,JPNWR,Japan Winter recruitment,NA,Japan-FAJ-JPNWR
+Japan,FAJ,NEMS,Nemuro Strait,NA,Japan-FAJ-NEMS
+Japan,FAJ,NHOKK,North coast of Hokkaido,NA,Japan-FAJ-NHOKK
+Japan,FAJ,NPAC,North Pacific,NA,Japan-FAJ-NPAC
+Japan,FAJ,NSJ,Sea of Japan North,NA,Japan-FAJ-NSJ
+Japan,FAJ,NWPAC,Northwest Pacific,NA,Japan-FAJ-NWPAC
+Japan,FAJ,OKS,Okhotsk Sea,NA,Japan-FAJ-OKS
+Japan,FAJ,OKWI,Okinawa Islands,NA,Japan-FAJ-OKWI
+Japan,FAJ,PAC,Pacific Ocean,NA,Japan-FAJ-PAC
+Japan,FAJ,PJPN,Pacific Coast of Japan,NA,Japan-FAJ-PJPN
+Japan,FAJ,SETO,Inland Sea of Japan,NA,Japan-FAJ-SETO
+Japan,FAJ,SETOE,Inland Sea of Japan (East),NA,Japan-FAJ-SETOE
+Japan,FAJ,SETOW,Inland Sea of Japan (West),NA,Japan-FAJ-SETOW
+Japan,FAJ,SHOKK,South coast of Hokkaido,NA,Japan-FAJ-SHOKK
+Japan,FAJ,SOJ,Sea of Japan,NA,Japan-FAJ-SOJ
+Japan,FAJ,SOJECS,Sea of Japan and East China Sea,NA,Japan-FAJ-SOJECS
+Japan,FAJ,SOJECSSI,Sea of Japan and East China Sea and Seto Inland sea,NA,Japan-FAJ-SOJECSSI
+Japan,FAJ,SWHOKK,Southwestern coast of Hokkaido,NA,Japan-FAJ-SWHOKK
+Japan,FAJ,SYS,Souya Strait,NA,Japan-FAJ-SYS
+Japan,FAJ,TSST,Tsushima Strait,NA,Japan-FAJ-TSST
+Japan,FAJ,TSSTWC,Tsushima warm current,NA,Japan-FAJ-TSSTWC
+Japan,FAJ,WSJ,Sea of Japan West,NA,Japan-FAJ-WSJ
+multinational,CCAMLR,RS,Ross Sea,NA,multinational-CCAMLR-RS
+multinational,CCSBT,SO,Southern Oceans,,multinational-CCSBT-SO
+multinational,FAO,CWA,Central West Africa,NA,multinational-FAO-CWA
+multinational,FAO,CWAAGO,Central West Africa Angola,NA,multinational-FAO-CWAAGO
+multinational,FAO,CWACIV-BEN,Central West Africa Cote Divoire-Benin,NA,multinational-FAO-CWACIV-BEN
+multinational,FAO,CWACOG_AGO,Central West Africa Congo_Angola,NA,multinational-FAO-CWACOG_AGO
+multinational,FAO,CWAGAB,Central West Africa Gabon,NA,multinational-FAO-CWAGAB
+multinational,FAO,CWAGAB-AGO,Central West Africa Gabon-Angola,NA,multinational-FAO-CWAGAB-AGO
+multinational,FAO,CWAGAB-COD,Central West Africa Gabon-Congo DR,NA,multinational-FAO-CWAGAB-COD
+multinational,FAO,CWAGHA,Central West Africa Ghana,NA,multinational-FAO-CWAGHA
+multinational,FAO,CWAGIN-LBR,Central West Africa Guinea-Liberia,NA,multinational-FAO-CWAGIN-LBR
+multinational,FAO,CWAGNB,Central West Africa Guinea Bissau,NA,multinational-FAO-CWAGNB
+multinational,FAO,CWAGNB-GIN,Central West Africa Guinea Bissau-Guinea,NA,multinational-FAO-CWAGNB-GIN
+multinational,FAO,CWAGNB-LBR,Central West Africa Guinea Bissau-Liberia,NA,multinational-FAO-CWAGNB-LBR
+multinational,FAO,CWASG1,Central West Africa Subgroup 1,NA,multinational-FAO-CWASG1
+multinational,FAO,CWASG2,Central West Africa Subgroup 2,NA,multinational-FAO-CWASG2
+multinational,FAO,CWASG3,Central West Africa Subgroup 3,NA,multinational-FAO-CWASG3
+multinational,FAO,CWASG4,Central West Africa Subgroup 4,NA,multinational-FAO-CWASG4
+multinational,FAO,NWA,North West Africa,NA,multinational-FAO-NWA
+multinational,FAO,NWACBL,North West Africa Cape Blanc,NA,multinational-FAO-NWACBL
+multinational,FAO,NWADAK,North West Africa Dakhla,NA,multinational-FAO-NWADAK
+multinational,FAO,NWAMAR,North West Africa Morocco,NA,multinational-FAO-NWAMAR
+multinational,FAO,NWAMRT,North West Africa Mauritania,NA,multinational-FAO-NWAMRT
+multinational,FAO,NWAMRT-SEN,North West Africa Mauritania-Senegal,NA,multinational-FAO-NWAMRT-SEN
+multinational,FAO,NWASEN_GMB,North West Africa Senegal_The Gambia,NA,multinational-FAO-NWASEN_GMB
+multinational,FAO,NWAZAB,North West Africa Zone A+B,NA,multinational-FAO-NWAZAB
+multinational,FAO,NWAZC,North West Africa Zone C,NA,multinational-FAO-NWAZC
+multinational,GFCMED,BLACKW,Western Black Sea,NA,multinational-GFCMED-BLACKW
+multinational,GFCM,GSA1,Northern Alboran Sea,NA,multinational-GFCM-GSA1
+multinational,GFCM,GSA10,South Tyrrhenian Sea,NA,multinational-GFCM-GSA10
+multinational,GFCM,GSA11,Sardinia,NA,multinational-GFCM-GSA11
+multinational,GFCM,GSA12-16,Geographical Sub-Areas 12-16,NA,multinational-GFCM-GSA12-16
+multinational,GFCM,GSA1-3,"Alboran Island Sea (GSA 1,3)",NA,multinational-GFCM-GSA1-3
+multinational,GFCM,GSA15-16,"Malta Island and South of Sicily (GSA 15, 16)",NA,multinational-GFCM-GSA15-16
+multinational,GFCM,GSA16,South of Sicily,NA,multinational-GFCM-GSA16
+multinational,GFCM,GSA17,Northern Adriatic Sea,NA,multinational-GFCM-GSA17
+multinational,GFCM,GSA1-7,Geographical Sub-Areas 1-7,NA,multinational-GFCM-GSA1-7
+multinational,GFCM,GSA17-18,"Adriatic Sea (GSA 17,18)",NA,multinational-GFCM-GSA17-18
+multinational,GFCM,GSA17-19,Geographical Sub-Areas 17-19,NA,multinational-GFCM-GSA17-19
+multinational,GFCM,GSA18,Southern Adriatic Sea,NA,multinational-GFCM-GSA18
+multinational,GFCM,GSA18-19,"South Adriatic Sea and West Ionian Sea (GSA 18,19)",NA,multinational-GFCM-GSA18-19
+multinational,GFCM,GSA19,Western Ionian Sea,NA,multinational-GFCM-GSA19
+multinational,GFCM,GSA20,Eastern Ionian Sea,NA,multinational-GFCM-GSA20
+multinational,GFCM,GSA22,Aegean Sea,NA,multinational-GFCM-GSA22
+multinational,GFCM,GSA22-23,"Aegean Sea and Crete Island (GSA 22,23)",NA,multinational-GFCM-GSA22-23
+multinational,GFCM,GSA25,Cyprus Island,NA,multinational-GFCM-GSA25
+multinational,GFCM,GSA29,Black Sea,NA,multinational-GFCM-GSA29
+multinational,GFCM,GSA5,Balearic Island,NA,multinational-GFCM-GSA5
+multinational,GFCM,GSA6,Northern Spain,NA,multinational-GFCM-GSA6
+multinational,GFCM,GSA6-7,Geographical Sub-Areas 6-7,NA,multinational-GFCM-GSA6-7
+multinational,GFCM,GSA7,Gulf of Lions,NA,multinational-GFCM-GSA7
+multinational,GFCM,GSA8-11,Geographical Sub-Areas 8-11,NA,multinational-GFCM-GSA8-11
+multinational,GFCM,GSA9,Ligurian and North Tyrrhenian Sea,NA,multinational-GFCM-GSA9
+multinational,GFCM,GSA9-11,Geographical Sub-Areas 9-11,NA,multinational-GFCM-GSA9-11
+multinational,IATTC,EPAC,Eastern Pacific,NA,multinational-IATTC-EPAC
+multinational,IATTC,NEPAC,Northeast Pacific,NA,multinational-IATTC-NEPAC
+multinational,ICCAT,ATL,Atlantic Ocean,NA,multinational-ICCAT-ATL
+multinational,ICCAT,EATL,Eastern Atlantic,NA,multinational-ICCAT-EATL
+multinational,ICCAT,MED,Mediterranean Sea,NA,multinational-ICCAT-MED
+multinational,ICCAT,NATL,Northern Atlantic,NA,multinational-ICCAT-NATL
+multinational,ICCAT,SATL,South Atlantic,NA,multinational-ICCAT-SATL
+multinational,ICCAT,WATL,Western Atlantic,NA,multinational-ICCAT-WATL
+multinational,ICES,1ABCDE,NAFO 1ABCDE,NA,multinational-ICES-1ABCDE
+multinational,ICES,1F-XIV,NAFO 1F and ICES 14,NA,multinational-ICES-1F-XIV
+multinational,ICES,1IN,NAFO Subarea 1 (inshore),NA,multinational-ICES-1IN
+multinational,ICES,21,Kattegat,NA,multinational-ICES-21
+multinational,ICES,2123,Subdivisions 21-23,NA,multinational-ICES-2123
+multinational,ICES,2223,Subdivisions 22-23,NA,multinational-ICES-2223
+multinational,ICES,22-24,Western Baltic,NA,multinational-ICES-22-24
+multinational,ICES,22-24-IIIa,ICES 22-24-3a,NA,multinational-ICES-22-24-IIIa
+multinational,ICES,22-32,Baltic Areas 22-32,NA,multinational-ICES-22-32
+multinational,ICES,2425,Subdivisions 24-25,NA,multinational-ICES-2425
+multinational,ICES,2432,Subdivisions 24-32,NA,multinational-ICES-2432
+multinational,ICES,2529-32,Subdivisions 25-29 and 32,NA,multinational-ICES-2529-32
+multinational,ICES,25-32,Eastern Baltic,NA,multinational-ICES-25-32
+multinational,ICES,2628,Subdivisions 26-28,NA,multinational-ICES-2628
+multinational,ICES,27-2932,Subdivisions 27 and 29-32,NA,multinational-ICES-27-2932
+multinational,ICES,29,Archipelago Sea,NA,multinational-ICES-29
+multinational,ICES,30,Bothnian Sea,NA,multinational-ICES-30
+multinational,ICES,30-31,Subdivisions 30-31,NA,multinational-ICES-30-31
+multinational,ICES,31,Bothnian Bay,NA,multinational-ICES-31
+multinational,ICES,32,Gulf of Finland,NA,multinational-ICES-32
+multinational,ICES,DP-1-2-V-XII-XIV,ICES 5-12-14 and NAFO Subareas 1-2 (deep),NA,multinational-ICES-DP-1-2-V-XII-XIV
+multinational,ICES,FU10,Noup (FU 10),NA,multinational-ICES-FU10
+multinational,ICES,FU11,North Minch (FU 11),NA,multinational-ICES-FU11
+multinational,ICES,FU12,South Minch (FU 12),NA,multinational-ICES-FU12
+multinational,ICES,FU13,Firth of Clyde and Sound of Jura (FU 13),NA,multinational-ICES-FU13
+multinational,ICES,FU14,Irish Sea East (FU 14),NA,multinational-ICES-FU14
+multinational,ICES,FU15,Irish Sea West (FU 15),NA,multinational-ICES-FU15
+multinational,ICES,FU16,Porcupine Bank (FU 16),NA,multinational-ICES-FU16
+multinational,ICES,FU17,Aran Grounds (FU 17),NA,multinational-ICES-FU17
+multinational,ICES,FU19,South East and West of IRL (FU 19),NA,multinational-ICES-FU19
+multinational,ICES,FU2021,"Labadie, Jones and Cockburn (FU 20-21)",NA,multinational-ICES-FU2021
+multinational,ICES,FU22,Smalls (FU 22),NA,multinational-ICES-FU22
+multinational,ICES,FU25,North Galicia (FU 25),NA,multinational-ICES-FU25
+multinational,ICES,FU2627,West Galicia and North Portugal (FU 26-27),NA,multinational-ICES-FU2627
+multinational,ICES,FU2829,South-West and South Portugal (FU 28-29),NA,multinational-ICES-FU2829
+multinational,ICES,FU30,Gulf of Cadiz (FU 30),NA,multinational-ICES-FU30
+multinational,ICES,FU31,Cantabrian Sea (FU 31),NA,multinational-ICES-FU31
+multinational,ICES,FU32,Norwegian Deeps (FU 32),NA,multinational-ICES-FU32
+multinational,ICES,FU33,Off Horn Reef (FU 33),NA,multinational-ICES-FU33
+multinational,ICES,FU34,Devils Hole (FU 34),NA,multinational-ICES-FU34
+multinational,ICES,FU3-4,Skagerak Kattegat (FU 3-4),NA,multinational-ICES-FU3-4
+multinational,ICES,FU5,Botney Cut - Silver Pit (FU 5),NA,multinational-ICES-FU5
+multinational,ICES,FU6,Farn Deeps (FU 6),NA,multinational-ICES-FU6
+multinational,ICES,FU7,Fladen Ground (FU 7),NA,multinational-ICES-FU7
+multinational,ICES,FU8,Firth of Forth (FU 8),NA,multinational-ICES-FU8
+multinational,ICES,FU9,Moray Firth (FU 9),NA,multinational-ICES-FU9
+multinational,ICES,I,Barents Sea,NA,multinational-ICES-I
+multinational,ICES,IIa,Norwegian Sea,NA,multinational-ICES-IIa
+multinational,ICES,IIab-Vab-XIVa,ICES 2ab-5ab-14a,NA,multinational-ICES-IIab-Vab-XIVa
+multinational,ICES,IIa-IIIabd-IV-Vb-VI-VII-VIIIabcde-XII-XIV-Ixa,ICES Northeast Atlantic,NA,multinational-ICES-IIa-IIIabd-IV-Vb-VI-VII-VIIIabcde-XII-XIV-Ixa
+multinational,ICES,IIa-IVa-Vb-VIa-VII-VIII,ICES 2a-4a-5b-6a-7-8,NA,multinational-ICES-IIa-IVa-Vb-VIa-VII-VIII
+multinational,ICES,IIa-V-XIV,ICES 2a-5-14,NA,multinational-ICES-IIa-V-XIV
+multinational,ICES,IIb,Spitzbergen and Bear Island,NA,multinational-ICES-IIb
+multinational,ICES,I-II,North-East Arctic,NA,multinational-ICES-I-II
+multinational,ICES,IIIa,Kattegat and Skagerrak,Skagerrak,multinational-ICES-IIIa
+multinational,ICES,IIIa-IV,ICES 3a-4,NA,multinational-ICES-IIIa-IV
+multinational,ICES,IIIa-IVa-VI-VII-VIII-IX-XII-XIV,Northeast Atlantic,NA,multinational-ICES-IIIa-IVa-VI-VII-VIII-IX-XII-XIV
+multinational,ICES,IIIa-IVbc-VIId,ICES 3a-4bc-7d,NA,multinational-ICES-IIIa-IVbc-VIId
+multinational,ICES,IIIa-IV-VI,ICES 3a-4-6,NA,multinational-ICES-IIIa-IV-VI
+multinational,ICES,IIIa-IV-VIId,ICES 3a-4-7d,NA,multinational-ICES-IIIa-IV-VIId
+multinational,ICES,IIIa-IV-VIIde,ICES 3a-4-7de,NA,multinational-ICES-IIIa-IV-VIIde
+multinational,ICES,IIIa-IV-VI-VII-VIIIabd,ICES 3a-4-6-7-8abd,NA,multinational-ICES-IIIa-IV-VI-VII-VIIIabd
+multinational,ICES,IIIaW-IVaE,ICES 3a(west)-4a(east),NA,multinational-ICES-IIIaW-IVaE
+multinational,ICES,IIIaW-IV-VIId,ICES 3a(west)-4-7d,NA,multinational-ICES-IIIaW-IV-VIId
+multinational,ICES,IIIb(23),Sound Sea,NA,multinational-ICES-IIIb(23)
+multinational,ICES,IIIc(22),Belt Sea,NA,multinational-ICES-IIIc(22)
+multinational,ICES,IIId,Baltic Sea,NA,multinational-ICES-IIId
+multinational,ICES,II-IIIa-IV,ICES 2-3a-4,NA,multinational-ICES-II-IIIa-IV
+multinational,ICES,II-IIIa-IV-VI-VII-VIIIabc,ICES 2-3a-4-6-7-8abc,NA,multinational-ICES-II-IIIa-IV-VI-VII-VIIIabc
+multinational,ICES,I-II-IIIa-IV,ICES 1-2-3a-4,NA,multinational-ICES-I-II-IIIa-IV
+multinational,ICES,I-II-IIIa-IVa-VIII-IX-XII,ICES 1-2-3a-4a-8-9-12,NA,multinational-ICES-I-II-IIIa-IVa-VIII-IX-XII
+multinational,ICES,I-II-III-IV-V-VI-VII-VIII-IX-XII-XIV,Northeast Atlantic,I-II-III-IV-V-VI-VII-VIII-IX-XII-XIV,multinational-ICES-I-II-III-IV-V-VI-VII-VIII-IX-XII-XIV
+multinational,ICES,I-II-III-IV-V-VI-VII-VIII-IX-X-XII-XIV,Northeast Atlantic,NA,multinational-ICES-I-II-III-IV-V-VI-VII-VIII-IX-X-XII-XIV
+multinational,ICES,I-II-IVa-V-XIVa,ICES 1-2-4a-5-14a,NA,multinational-ICES-I-II-IVa-V-XIVa
+multinational,ICES,I-II-IVa-V-XIVaNSS,ICES 1-2-4a-5-14a (Norwegian Spring Spawners),NA,multinational-ICES-I-II-IVa-V-XIVaNSS
+multinational,ICES,I-II-IV-Va2-VIII-IX-XIVab2,ICES 1-2-4-5a2-8-9-14ab2,NA,multinational-ICES-I-II-IV-Va2-VIII-IX-XIVab2
+multinational,ICES,I-II-NCW,North-East Arctic (Norwegian coastal waters),NA,multinational-ICES-I-II-NCW
+multinational,ICES,IV,North Sea,NA,multinational-ICES-IV
+multinational,ICES,IVa,Northern North Sea,NA,multinational-ICES-IVa
+multinational,ICES,IVa-VI,ICES 4a-6,NA,multinational-ICES-IVa-VI
+multinational,ICES,IVa-VIa,ICES 4a-6a,NA,multinational-ICES-IVa-VIa
+multinational,ICES,IVb,Central North Sea,NA,multinational-ICES-IVb
+multinational,ICES,IVbc-VII,ICES 4bc-7,NA,multinational-ICES-IVbc-VII
+multinational,ICES,IVc,Southern North Sea,NA,multinational-ICES-IVc
+multinational,ICES,IVc-VIId,ICES 4c-7d,NA,multinational-ICES-IVc-VIId
+multinational,ICES,IV-VIId,ICES 4-7d,NA,multinational-ICES-IV-VIId
+multinational,ICES,IX,ICES 9,NA,multinational-ICES-IX
+multinational,ICES,IXa,Portugese Waters -East,NA,multinational-ICES-IXa
+multinational,ICES,IXb,Portugese Waters -West,NA,multinational-ICES-IXb
+multinational,ICES,MATLR,Mid-Atlantic Ridge,NA,multinational-ICES-MATLR
+multinational,ICES,NS-IIIa-VIa,ICES 3a-4-6a,NA,multinational-ICES-NS-IIIa-VIa
+multinational,ICES,RIGA,Gulf of Riga East of Gotland,NA,multinational-ICES-RIGA
+multinational,ICES,SA1,Sandeel Area 1,NA,multinational-ICES-SA1
+multinational,ICES,SA2,Sandeel Area 2,NA,multinational-ICES-SA2
+multinational,ICES,SA3,Sandeel Area 3,NA,multinational-ICES-SA3
+multinational,ICES,SA4,Sandeel Area 4,NA,multinational-ICES-SA4
+multinational,ICES,SA5,Sandeel Area 5,NA,multinational-ICES-SA5
+multinational,ICES,SA6,Sandeel Area 6,NA,multinational-ICES-SA6
+multinational,ICES,SA7,Sandeel Area 7,NA,multinational-ICES-SA7
+multinational,ICES,SH-1-2-V-XII-XIV,ICES 5-12-14 and NAFO Subareas 1-2 (shallow),NA,multinational-ICES-SH-1-2-V-XII-XIV
+multinational,ICES,Va,Iceland Grounds,NA,multinational-ICES-Va
+multinational,ICES,VaSS,Iceland (Summer spawners),NA,multinational-ICES-VaSS
+multinational,ICES,Va-XIV,ICES 5a-14,NA,multinational-ICES-Va-XIV
+multinational,ICES,Vb,Faroe Grounds,NA,multinational-ICES-Vb
+multinational,ICES,Vb1,Faroe Plateau,NA,multinational-ICES-Vb1
+multinational,ICES,Vb2,Faroe Bank,NA,multinational-ICES-Vb2
+multinational,ICES,Vb-VIa,ICES 5b-6a,NA,multinational-ICES-Vb-VIa
+multinational,ICES,Vb-VI-VII,ICES 5b-6-7,NA,multinational-ICES-Vb-VI-VII
+multinational,ICES,Vb-VI-VII-XIIb,ICES 5b-6-7-12b,NA,multinational-ICES-Vb-VI-VII-XIIb
+multinational,ICES,VI,ICES 6,NA,multinational-ICES-VI
+multinational,ICES,VIa,West of Scotland,,multinational-ICES-VIa
+multinational,ICES,VIa-VIIb-j,ICES 6a-7b-j,NA,multinational-ICES-VIa-VIIb-j
+multinational,ICES,VIa-VIIb-VIIc,ICES 5a-7bc,NA,multinational-ICES-VIa-VIIb-VIIc
+multinational,ICES,VIb,Rockall Bank,NA,multinational-ICES-VIb
+multinational,ICES,VIb-VII-VIII-IX-X-XII,ICES 6b-7-8-9-10-12,NA,multinational-ICES-VIb-VII-VIII-IX-X-XII
+multinational,ICES,VII,ICES 7,NA,multinational-ICES-VII
+multinational,ICES,VIIa,Irish Sea,NA,multinational-ICES-VIIa
+multinational,ICES,VIIaefgh,ICES 7aefgh,NA,multinational-ICES-VIIaefgh
+multinational,ICES,VIIafg,ICES 7afg,NA,multinational-ICES-VIIafg
+multinational,ICES,VIIa-g-h-j-k,ICES 7a-g-h-j-k,NA,multinational-ICES-VIIa-g-h-j-k
+multinational,ICES,VIIb,West of Ireland,NA,multinational-ICES-VIIb
+multinational,ICES,VIIbc,ICES 7bc,NA,multinational-ICES-VIIbc
+multinational,ICES,VIIbce-k,Celtic Sea,NA,multinational-ICES-VIIbce-k
+multinational,ICES,VIIb-k,ICES 7b-k,NA,multinational-ICES-VIIb-k
+multinational,ICES,VIIb-k_VIIIabd,ICES 7b-k_8abd,NA,multinational-ICES-VIIb-k_VIIIabd
+multinational,ICES,VIIc,Porcupine Bank,NA,multinational-ICES-VIIc
+multinational,ICES,VIId,Eastern English Channel,NA,multinational-ICES-VIId
+multinational,ICES,VIIde,ICES 7de,NA,multinational-ICES-VIIde
+multinational,ICES,VIIe,Western English Channel,NA,multinational-ICES-VIIe
+multinational,ICES,VIIe-k,Celtic Sea,NA,multinational-ICES-VIIe-k
+multinational,ICES,VIIf,Bristol Channel,NA,multinational-ICES-VIIf
+multinational,ICES,VIIf-g,Celtic Sea,NA,multinational-ICES-VIIf-g
+multinational,ICES,VIIg,Celtic Sea North,NA,multinational-ICES-VIIg
+multinational,ICES,VIIh,Celtic Sea South,NA,multinational-ICES-VIIh
+multinational,ICES,VIIh-k,ICES 7h-k,NA,multinational-ICES-VIIh-k
+multinational,ICES,VIII,Bay of Biscay,NA,multinational-ICES-VIII
+multinational,ICES,VIIIa,Bay of Biscay -North,NA,multinational-ICES-VIIIa
+multinational,ICES,VIIIab,ICES 8ab,NA,multinational-ICES-VIIIab
+multinational,ICES,VIIIabd,ICES 8abd,NA,multinational-ICES-VIIIabd
+multinational,ICES,VIIIb,Bay of Biscay -Central,NA,multinational-ICES-VIIIb
+multinational,ICES,VIIIc,Bay of Biscay -South,NA,multinational-ICES-VIIIc
+multinational,ICES,VIIIc-IXa,ICES 8c-9a,NA,multinational-ICES-VIIIc-IXa
+multinational,ICES,VIIId,Bay of Biscay -Offshore,NA,multinational-ICES-VIIId
+multinational,ICES,VIIIe,West of Bay of Biscay,NA,multinational-ICES-VIIIe
+multinational,ICES,VIII-IXa,ICES 8-9a,NA,multinational-ICES-VIII-IXa
+multinational,ICES,VIIj,Southwest of Ireland -East,NA,multinational-ICES-VIIj
+multinational,ICES,VIIk,Southwest of Ireland -West,NA,multinational-ICES-VIIk
+multinational,ICES,VII-VIIIabd,ICES 7-8abd,NA,multinational-ICES-VII-VIIIabd
+multinational,ICES,VI-VII,ICES 6-7,NA,multinational-ICES-VI-VII
+multinational,ICES,VI-VIIabcefghij,ICES 6-7abcefghij,NA,multinational-ICES-VI-VIIabcefghij
+multinational,ICES,VI-VIIabcefghijk-VIII-IXa,ICES 6-7abcefghijk-8-9a,NA,multinational-ICES-VI-VIIabcefghijk-VIII-IXa
+multinational,ICES,VI-VIIabcfghijk,ICES 6-7abcfghijk,NA,multinational-ICES-VI-VIIabcfghijk
+multinational,ICES,VI-VIIbj,ICES 6-7bj,NA,multinational-ICES-VI-VIIbj
+multinational,ICES,VI-VIII,ICES 6-8,NA,multinational-ICES-VI-VIII
+multinational,ICES,VI-VII-VIII,ICES 6-7-8,NA,multinational-ICES-VI-VII-VIII
+multinational,ICES,V-VI-XII-XIV,ICES 5-6-12-14,NA,multinational-ICES-V-VI-XII-XIV
+multinational,ICES,X,Azores Grounds,NA,multinational-ICES-X
+multinational,ICES,Xa2,Azores,NA,multinational-ICES-Xa2
+multinational,ICES,XII,North of Azores,NA,multinational-ICES-XII
+multinational,ICES,XIVa,Northeast Greenland,NA,multinational-ICES-XIVa
+multinational,ICES,XIVb,Southeast Greenland,NA,multinational-ICES-XIVb
+multinational,IOTC,IO,Indian Ocean,NA,multinational-IOTC-IO
+multinational,IPHC,NPAC,North Pacific,NA,multinational-IPHC-NPAC
+multinational,ISC,NPAC,North Pacific Ocean,NA,multinational-ISC-NPAC
+multinational,ISC,PAC,Pacific Ocean,NA,multinational-ISC-PAC
+multinational,ISC,SPAC,South Pacific Ocean,NA,multinational-ISC-SPAC
+multinational,ISC,WCNPAC,Western and Central North Pacific,NA,multinational-ISC-WCNPAC
+multinational,NAFO,01ABCDEF,NAFO divisions 01ABCDEF,NA,multinational-NAFO-01ABCDEF
+multinational,NAFO,1,West Greenland,NA,multinational-NAFO-1
+multinational,NAFO,23K,Labrador - NE Newfoundland,NA,multinational-NAFO-23K
+multinational,NAFO,23KLMNO,Labrador Shelf - Grand Banks,NA,multinational-NAFO-23KLMNO
+multinational,NAFO,3L,N Grand Banks,NA,multinational-NAFO-3L
+multinational,NAFO,3LN,N and SW Grand Banks,NA,multinational-NAFO-3LN
+multinational,NAFO,3LNO,Grand Banks,NA,multinational-NAFO-3LNO
+multinational,NAFO,3LNOPs,Grand Bank and St Pierre Bank,NA,multinational-NAFO-3LNOPs
+multinational,NAFO,3M,Flemish Cap,NA,multinational-NAFO-3M
+multinational,NAFO,3NO,Southern Grand Banks,NA,multinational-NAFO-3NO
+multinational,NAFO,3NOPs,Grand Bank and St. Pierre Bank,NA,multinational-NAFO-3NOPs
+multinational,NAFO,3O,SW Grand Banks,NA,multinational-NAFO-3O
+multinational,NAFO,3Ps,St. Pierre Bank,NA,multinational-NAFO-3Ps
+multinational,NPFC,NWPAC,Northwest Pacific,NA,multinational-NPFC-NWPAC
+multinational,SPRFMO,CH,Chilean EEZ and offshore,NA,multinational-SPRFMO-CH
+multinational,SPRFMO,CHL,Chile,NA,multinational-SPRFMO-CHL
+multinational,SPRFMO,NCH,North Chilean EEZ and offshore,NA,multinational-SPRFMO-NCH
+multinational,SPRFMO,SCH,South Chilean EEZ and offshore,NA,multinational-SPRFMO-SCH
+multinational,SPRFMO,V-VIII,Chilean EEZ and offshore region V-VIII,NA,multinational-SPRFMO-V-VIII
+multinational,SPRFMO,V-X,Chilean EEZ and offshore region V-X,NA,multinational-SPRFMO-V-X
+multinational,STECF,BLACK,Black Sea,NA,multinational-STECF-BLACK
+multinational,SUBPESCA-CFP,SCH-ARG,South Chile Argentina,NA,multinational-SUBPESCA-CFP-SCH-ARG
+multinational,TRAC,5Z,Georges Bank,NA,multinational-TRAC-5Z
+multinational,TRAC,5Zjm,NAFO 5Zjm,NA,multinational-TRAC-5Zjm
+multinational,UNKNOWN,NWPAC,Nothwest Pacific Ocean,NA,multinational-UNKNOWN-NWPAC
+multinational,WCPFC,CWPAC,Central Western Pacific Ocean,NA,multinational-WCPFC-CWPAC
+multinational,WCPFC,NPAC,North Pacific,NA,multinational-WCPFC-NPAC
+multinational,WCPFC,SPAC,South Pacific Ocean,NA,multinational-WCPFC-SPAC
+multinational,WCPFC,SWPAC,Western Pacific Ocean,NA,multinational-WCPFC-SWPAC
+multinational,WCPFC,WPO,Western Pacific Ocean,NA,multinational-WCPFC-WPO
+Namibia,NMFMR,SAF,Southern Africa,NA,Namibia-NMFMR-SAF
+New Zealand,MFish,8,New Zealand Area 8 (Auckland and Central West),NA,New Zealand-MFish-8
+New Zealand,MFish,BOP,Bay of Plenty,NA,New Zealand-MFish-BOP
+New Zealand,MFish,BP,Bounty Plateau,NA,New Zealand-MFish-BP
+New Zealand,MFish,CIR,Campbell Island Rise,NA,New Zealand-MFish-CIR
+New Zealand,MFish,CR,Chatham Rise,NA,New Zealand-MFish-CR
+New Zealand,MFish,CRA1,New Zealand Area CRA1,NA,New Zealand-MFish-CRA1
+New Zealand,MFish,CRA2,New Zealand Area CRA2,NA,New Zealand-MFish-CRA2
+New Zealand,MFish,CRA3,New Zealand Area CRA3,NA,New Zealand-MFish-CRA3
+New Zealand,MFish,CRA4,New Zealand Area CRA4,NA,New Zealand-MFish-CRA4
+New Zealand,MFish,CRA5,New Zealand Area CRA5,NA,New Zealand-MFish-CRA5
+New Zealand,MFish,CRA7,New Zealand Area CRA7,NA,New Zealand-MFish-CRA7
+New Zealand,MFish,CRA8,New Zealand Area CRA8,NA,New Zealand-MFish-CRA8
+New Zealand,MFish,ENI,East coast of North Island,NA,New Zealand-MFish-ENI
+New Zealand,MFish,ENZ,Eastern New Zealand,NA,New Zealand-MFish-ENZ
+New Zealand,MFish,EPR,East Pukaki Rise,NA,New Zealand-MFish-EPR
+New Zealand,MFish,ESCR,East and South Chatham Rise,NA,New Zealand-MFish-ESCR
+New Zealand,MFish,FS,Foveax Strait,NA,New Zealand-MFish-FS
+New Zealand,MFish,GUR3,New Zealand Area GUR 7,NA,New Zealand-MFish-GUR3
+New Zealand,MFish,GUR7,New Zealand Area GUR 7,NA,New Zealand-MFish-GUR7
+New Zealand,MFish,LIN3-4,New Zealand Areas LIN 3 and 4,NA,New Zealand-MFish-LIN3-4
+New Zealand,MFish,LIN5-6,New Zealand Areas LIN 5 and 6,NA,New Zealand-MFish-LIN5-6
+New Zealand,MFish,LIN6b,New Zealand Areas LIN 6b,NA,New Zealand-MFish-LIN6b
+New Zealand,MFish,LIN72,New Zealand Areas LIN 72,NA,New Zealand-MFish-LIN72
+New Zealand,MFish,LIN7WC-WCSI,New Zealand Areas LIN 7WC-WCSI,NA,New Zealand-MFish-LIN7WC-WCSI
+New Zealand,MFish,MB,Mernoo Bank,NA,New Zealand-MFish-MB
+New Zealand,MFish,NPAU5A,NZ Area North PAUA 5A,NA,New Zealand-MFish-NPAU5A
+New Zealand,MFish,NWCR,Northwest Chatham Rise,NA,New Zealand-MFish-NWCR
+New Zealand,MFish,NZ,New Zealand,NA,New Zealand-MFish-NZ
+New Zealand,MFish,NZ7A,New Zealand Challenger Plateau,NA,New Zealand-MFish-NZ7A
+New Zealand,MFish,NZMEC,New Zealand Mid East Coast,NA,New Zealand-MFish-NZMEC
+New Zealand,MFish,PAU5A,New Zealand Area PAU 5A,NA,New Zealand-MFish-PAU5A
+New Zealand,MFish,PAU5B,New Zealand Area PAU 5B (Stewart Island),NA,New Zealand-MFish-PAU5B
+New Zealand,MFish,PAU5D,New Zealand Area PAU 5D (Otago),NA,New Zealand-MFish-PAU5D
+New Zealand,MFish,PAU7,New Zealand Area PAU 7 (Marlborough),NA,New Zealand-MFish-PAU7
+New Zealand,MFish,PR,Pukaki Rise,NA,New Zealand-MFish-PR
+New Zealand,MFish,SA,Sub-Antarctic,NA,New Zealand-MFish-SA
+New Zealand,MFish,SCI6A,SCI 6A (Auckland Islands),NA,New Zealand-MFish-SCI6A
+New Zealand,MFish,SLD,Southland,NA,New Zealand-MFish-SLD
+New Zealand,MFish,SNA1-BOP-HAGU,New Zealand SNA 1 Bay of Plenty and Hauraki Gulf,NA,New Zealand-MFish-SNA1-BOP-HAGU
+New Zealand,MFish,SNA-1-ENLD,New Zealand SNA 1 east Northland,NA,New Zealand-MFish-SNA-1-ENLD
+New Zealand,MFish,SNA-7,New Zealand SNA 7,NA,New Zealand-MFish-SNA-7
+New Zealand,MFish,SPAU5A,NZ Area South PAUA 5A,NA,New Zealand-MFish-SPAU5A
+New Zealand,MFish,STA7,NZ Area STA7,NA,New Zealand-MFish-STA7
+New Zealand,MFish,TRE7,New Zealand Areas TRE 7,NA,New Zealand-MFish-TRE7
+New Zealand,MFish,WCSI,West Coast South Island,NA,New Zealand-MFish-WCSI
+New Zealand,MFish,WECR,West end of Chatham Rise,NA,New Zealand-MFish-WECR
+New Zealand,MFish,WHB,Wairarapa/Hawke Bay,NA,New Zealand-MFish-WHB
+New Zealand,MFish,WNZ,Western New Zealand,NA,New Zealand-MFish-WNZ
+Peru,IMARPE,NC,North-Central Peruvian coast,NA,Peru-IMARPE-NC
+Russia,RFFA,NAVAR,Navarinsky,NA,Russia-RFFA-NAVAR
+Russia,RFFA,NSO,Northern Sea of Okhotsk,NA,Russia-RFFA-NSO
+Russia,RFFA,WBS,Western Bering Sea,NA,Russia-RFFA-WBS
+Russia,TINRO,AMURCH,Amur chum hatchery,NA,Russia-TINRO-AMURCH
+Russia,TINRO,AMURCW,Amur chum wild,NA,Russia-TINRO-AMURCW
+Russia,TINRO,AMURPW,Amur pink wild,NA,Russia-TINRO-AMURPW
+Russia,TINRO,ANADYRCW,Anadyr chum wild,NA,Russia-TINRO-ANADYRCW
+Russia,TINRO,ANADYRPW,Anadyr pink wild,NA,Russia-TINRO-ANADYRPW
+Russia,TINRO,ANADYRSW,Anadyr sockeye wild,NA,Russia-TINRO-ANADYRSW
+Russia,TINRO,EKAMCH,East Kamchatka chum hatchery,NA,Russia-TINRO-EKAMCH
+Russia,TINRO,EKAMCW,East Kamchatka chum wild,NA,Russia-TINRO-EKAMCW
+Russia,TINRO,EKAMPW,East Kamchatka pink wild,NA,Russia-TINRO-EKAMPW
+Russia,TINRO,EKAMSW,East Kamchatka sockeye wild,NA,Russia-TINRO-EKAMSW
+Russia,TINRO,ESAKCH,East Sakhalin chum hatchery,NA,Russia-TINRO-ESAKCH
+Russia,TINRO,ESAKPH,East Sakhalin pink hatchery,NA,Russia-TINRO-ESAKPH
+Russia,TINRO,ESAKPW,East Sakhalin pink wild,NA,Russia-TINRO-ESAKPW
+Russia,TINRO,OKCH,Okhotsk chum hatchery,NA,Russia-TINRO-OKCH
+Russia,TINRO,OKCW,Okhotsk chum wild,NA,Russia-TINRO-OKCW
+Russia,TINRO,OKPH,Okhotsk pink hatchery,NA,Russia-TINRO-OKPH
+Russia,TINRO,OKPW,Okhotsk pink wild,NA,Russia-TINRO-OKPW
+Russia,TINRO,OKSH,Okhotsk sockeye hatchery,NA,Russia-TINRO-OKSH
+Russia,TINRO,OKSW,Okhotsk sockeye wild,NA,Russia-TINRO-OKSW
+Russia,TINRO,PRIMCH,Primorye chum hatchery,NA,Russia-TINRO-PRIMCH
+Russia,TINRO,PRIMCW,Primorye chum wild,NA,Russia-TINRO-PRIMCW
+Russia,TINRO,PRIMPW,Primorye pink wild,NA,Russia-TINRO-PRIMPW
+Russia,TINRO,WKAMCH,West Kamchatka chum hatchery,NA,Russia-TINRO-WKAMCH
+Russia,TINRO,WKAMCW,West Kamchatka chum wild,NA,Russia-TINRO-WKAMCW
+Russia,TINRO,WKAMPH,West Kamchatka pink hatchery,NA,Russia-TINRO-WKAMPH
+Russia,TINRO,WKAMPW,West Kamchatka pink wild,NA,Russia-TINRO-WKAMPW
+Russia,TINRO,WKAMSH,West Kamchatka sockeye hatchery,NA,Russia-TINRO-WKAMSH
+Russia,TINRO,WKAMSW,West Kamchatka sockeye wild,NA,Russia-TINRO-WKAMSW
+South Africa,DEFF,SASC,South Africa South coast,NA,South Africa-DEFF-SASC
+South Africa,DEFF,SAWC,South Africa West coast,NA,South Africa-DEFF-SAWC
+South Africa,DETMCM,2-Jan,South Africa Areas 1-2,NA,South Africa-DETMCM-1-2
+South Africa,DETMCM,4-Mar,South Africa Areas 3-4,NA,South Africa-DETMCM-3-4
+South Africa,DETMCM,6-May,South Africa Areas 5-6,NA,South Africa-DETMCM-5-6
+South Africa,DETMCM,7,South Africa Area 7,NA,South Africa-DETMCM-7
+South Africa,DETMCM,8,South Africa Area 8,NA,South Africa-DETMCM-8
+South Africa,DETMCM,PEI,South Africa Subantarctic Prince Edward Islands,NA,South Africa-DETMCM-PEI
+South Africa,DETMCM,SA,South Africa,NA,South Africa-DETMCM-SA
+South Africa,DETMCM,SAS,South Africa (South Component),NA,South Africa-DETMCM-SAS
+South Africa,DETMCM,SASC,South Africa South coast,NA,South Africa-DETMCM-SASC
+South Africa,DETMCM,SAW,South Africa (West Component),NA,South Africa-DETMCM-SAW
+South Africa,DETMCM,SAWC,South Africa West coast,NA,South Africa-DETMCM-SAWC
+USA,AKSTATE,AFFLECKCI,Affleck Cl (District105),NA,USA-AKSTATE-AFFLECKCI
+USA,AKSTATE,AFOGNAKD,Afognak District,NA,USA-AKSTATE-AFOGNAKD
+USA,AKSTATE,AIALIKL,Aialik Lagoon (Eastern D),NA,USA-AKSTATE-AIALIKL
+USA,AKSTATE,AKALURAL,Akalura Lake,NA,USA-AKSTATE-AKALURAL
+USA,AKSTATE,AKPNWD,AK Pen Northwestern District,NA,USA-AKSTATE-AKPNWD
+USA,AKSTATE,AKPSESCD,AK Pen Southeastern and South-central Districts,NA,USA-AKSTATE-AKPSESCD
+USA,AKSTATE,AKPSWUD,AK Pen Southwestern and Unimak Districts,NA,USA-AKSTATE-AKPSWUD
+USA,AKSTATE,ALITAKD,Alitak District,NA,USA-AKSTATE-ALITAKD
+USA,AKSTATE,AMAKC,Amakdedori Creek (Kamishak D),NA,USA-AKSTATE-AMAKC
+USA,AKSTATE,ANAN,Anan (District107),NA,USA-AKSTATE-ANAN
+USA,AKSTATE,ANDREAR,Andreafsky River,NA,USA-AKSTATE-ANDREAR
+USA,AKSTATE,ANVIKR,Anvik River,NA,USA-AKSTATE-ANVIKR
+USA,AKSTATE,AUKEC,Auke Creek (Northern Inside),NA,USA-AKSTATE-AUKEC
+USA,AKSTATE,AWKER,Akwe River,NA,USA-AKSTATE-AWKER
+USA,AKSTATE,BARABARA,Barabara (Southern D),NA,USA-AKSTATE-BARABARA
+USA,AKSTATE,BARANOFE,Baranof E (District109),NA,USA-AKSTATE-BARANOFE
+USA,AKSTATE,BEARR,Bear River,NA,USA-AKSTATE-BEARR
+USA,AKSTATE,BECHSNWD,"Bechevin, Swanson (Northwestern District)",NA,USA-AKSTATE-BECHSNWD
+USA,AKSTATE,BKAMISHAKR,Big Kamishak River  (Kamishak D),NA,USA-AKSTATE-BKAMISHAKR
+USA,AKSTATE,BLACKL,Black Lake,NA,USA-AKSTATE-BLACKL
+USA,AKSTATE,BLKAMR,Big and Little Kamishak Rivers,NA,USA-AKSTATE-BLKAMR
+USA,AKSTATE,BRANCH,Branch,NA,USA-AKSTATE-BRANCH
+USA,AKSTATE,BRUINR,Bruin River,NA,USA-AKSTATE-BRUINR
+USA,AKSTATE,BURNETT,Burnett (District106),NA,USA-AKSTATE-BURNETT
+USA,AKSTATE,BUSKINL,Buskin Lake,NA,USA-AKSTATE-BUSKINL
+USA,AKSTATE,CARIBOUF,CaribouFlats,NA,USA-AKSTATE-CARIBOUF
+USA,AKSTATE,CHIDWD,Chignik Western District,NA,USA-AKSTATE-CHIDWD
+USA,AKSTATE,CHIGCD,Chignik Central District,NA,USA-AKSTATE-CHIGCD
+USA,AKSTATE,CHIGED,Chignik Eastern District,NA,USA-AKSTATE-CHIGED
+USA,AKSTATE,CHIGNIKBD,Chignik Bay District,NA,USA-AKSTATE-CHIGNIKBD
+USA,AKSTATE,CHIGNIKCD,Chignik Central District,NA,USA-AKSTATE-CHIGNIKCD
+USA,AKSTATE,CHIGNIKED,Chignik Eastern District,NA,USA-AKSTATE-CHIGNIKED
+USA,AKSTATE,CHIGNIKL,Chignik Lake,NA,USA-AKSTATE-CHIGNIKL
+USA,AKSTATE,CHIGNIKWD,Chignik Western District,NA,USA-AKSTATE-CHIGNIKWD
+USA,AKSTATE,CHILKATL,Chilkat Lake,NA,USA-AKSTATE-CHILKATL
+USA,AKSTATE,CHILKOOTL,Chilkoot Lake,NA,USA-AKSTATE-CHILKOOTL
+USA,AKSTATE,CHINAP,China Poot (Southern D),NA,USA-AKSTATE-CHINAP
+USA,AKSTATE,CINDERR,Cinder River,NA,USA-AKSTATE-CINDERR
+USA,AKSTATE,COGHILLD,Coghill District,NA,USA-AKSTATE-COGHILLD
+USA,AKSTATE,CWCIR,Cottonwood Creek and Iniskin River,NA,USA-AKSTATE-CWCIR
+USA,AKSTATE,DFL,Dogfish Lagoon,NA,USA-AKSTATE-DFL
+USA,AKSTATE,DOGFISH,Dogfish (Southern D),NA,USA-AKSTATE-DOGFISH
+USA,AKSTATE,EALSEKDR,East-Alsek-Doame River,NA,USA-AKSTATE-EALSEKDR
+USA,AKSTATE,EALSEKR,East Alsek River,NA,USA-AKSTATE-EALSEKR
+USA,AKSTATE,EBEHM,EBehm (District 101),NA,USA-AKSTATE-EBEHM
+USA,AKSTATE,EDALL,EDall (District103),NA,USA-AKSTATE-EDALL
+USA,AKSTATE,EGEGIK,Egegik,NA,USA-AKSTATE-EGEGIK
+USA,AKSTATE,ELIZAH,Eliza Hbr (District109),NA,USA-AKSTATE-ELIZAH
+USA,AKSTATE,ESHAMYD,Eshamy District,NA,USA-AKSTATE-ESHAMYD
+USA,AKSTATE,ESND,Eastside-Northend District,NA,USA-AKSTATE-ESND
+USA,AKSTATE,EUPPERS,Early Upper Station,NA,USA-AKSTATE-EUPPERS
+USA,AKSTATE,FARRAGUT,Farragut (District110),NA,USA-AKSTATE-FARRAGUT
+USA,AKSTATE,FISHC,Fish Creek,NA,USA-AKSTATE-FISHC
+USA,AKSTATE,FRESHWB,Freshw By (District112),NA,USA-AKSTATE-FRESHWB
+USA,AKSTATE,GOLOVIN,Golovin,NA,USA-AKSTATE-GOLOVIN
+USA,AKSTATE,GOODNEWSR,Goodnews River,NA,USA-AKSTATE-GOODNEWSR
+USA,AKSTATE,HETTA,Hetta (District103),NA,USA-AKSTATE-HETTA
+USA,AKSTATE,HOMES,Homeshor (District114),NA,USA-AKSTATE-HOMES
+USA,AKSTATE,HOONAHS,Hoonah S (District113),NA,USA-AKSTATE-HOONAHS
+USA,AKSTATE,HOUGHTON,Houghton (District110),NA,USA-AKSTATE-HOUGHTON
+USA,AKSTATE,HUMPCY,Humpy Creek (Yakutat),NA,USA-AKSTATE-HUMPCY
+USA,AKSTATE,HUMPYCCISD,Humpy Creek (Cook Inlet Southern D),NA,USA-AKSTATE-HUMPYCCISD
+USA,AKSTATE,IGUSHIK,Igushik River,NA,USA-AKSTATE-IGUSHIK
+USA,AKSTATE,ILNIKR,Ilnik River,NA,USA-AKSTATE-ILNIKR
+USA,AKSTATE,ITALOR,Italo River,NA,USA-AKSTATE-ITALOR
+USA,AKSTATE,IZEMBEKMNWD,"Izembek, Moffet (Northwestern District)",NA,USA-AKSTATE-IZEMBEKMNWD
+USA,AKSTATE,JAMESLOD,James Lagoon (Outer D),NA,USA-AKSTATE-JAMESLOD
+USA,AKSTATE,KADASHANC,Kadashan Creek,NA,USA-AKSTATE-KADASHANC
+USA,AKSTATE,KANEKTOKR,Kanektok River,NA,USA-AKSTATE-KANEKTOKR
+USA,AKSTATE,KARLUKL,Karluk Lake,NA,USA-AKSTATE-KARLUKL
+USA,AKSTATE,KASAAN,Kasaan (District102),NA,USA-AKSTATE-KASAAN
+USA,AKSTATE,KELPB,Kelp By (District112),NA,USA-AKSTATE-KELPB
+USA,AKSTATE,KLAWOCK,Klawock (District103),NA,USA-AKSTATE-KLAWOCK
+USA,AKSTATE,KLUKSHUR,Klukshu River,NA,USA-AKSTATE-KLUKSHUR
+USA,AKSTATE,KODIAKMD,Kodiak Mainland District,NA,USA-AKSTATE-KODIAKMD
+USA,AKSTATE,KODIAKWD,Kodiak Westside District,NA,USA-AKSTATE-KODIAKWD
+USA,AKSTATE,KOTZEBUES,Kotzebue Sound,NA,USA-AKSTATE-KOTZEBUES
+USA,AKSTATE,KTRNS,Kwiniuk and Tubutulik Rivers (Norton Sound),NA,USA-AKSTATE-KTRNS
+USA,AKSTATE,KUSKOKWIM,Kuskokwim,NA,USA-AKSTATE-KUSKOKWIM
+USA,AKSTATE,KVICHAK,Kvichak,NA,USA-AKSTATE-KVICHAK
+USA,AKSTATE,LISIANSKI,Lisianski (District113),NA,USA-AKSTATE-LISIANSKI
+USA,AKSTATE,LKAMR,Little Kamishak River (Kamishak D),NA,USA-AKSTATE-LKAMR
+USA,AKSTATE,LOSTR,Lost River,NA,USA-AKSTATE-LOSTR
+USA,AKSTATE,LRIVER,Little River,NA,USA-AKSTATE-LRIVER
+USA,AKSTATE,LUPPERS,Late Upper Station,NA,USA-AKSTATE-LUPPERS
+USA,AKSTATE,LYNNCD112,Lynn Cnl (District112),NA,USA-AKSTATE-LYNNCD112
+USA,AKSTATE,LYNNCD115,Lynn Cnl (District115),NA,USA-AKSTATE-LYNNCD115
+USA,AKSTATE,MALINAL,Malina Lake,NA,USA-AKSTATE-MALINAL
+USA,AKSTATE,MCDONALD,McDonald,NA,USA-AKSTATE-MCDONALD
+USA,AKSTATE,MNRSD,McNeil River (and Sub-District),NA,USA-AKSTATE-MNRSD
+USA,AKSTATE,MOIRA,Moira (District102),NA,USA-AKSTATE-MOIRA
+USA,AKSTATE,MONTD,Montague District,NA,USA-AKSTATE-MONTD
+USA,AKSTATE,MPNBNS,Moses Point and Norton Bay (Norton Sound),NA,USA-AKSTATE-MPNBNS
+USA,AKSTATE,NAKNEK,Naknek,NA,USA-AKSTATE-NAKNEK
+USA,AKSTATE,NCHICHAGO,Nchichago (District114),NA,USA-AKSTATE-NCHICHAGO
+USA,AKSTATE,NELSONL,NelsonLagoon,NA,USA-AKSTATE-NELSONL
+USA,AKSTATE,NELSONR,Nelson River,NA,USA-AKSTATE-NELSONR
+USA,AKSTATE,NOME,Nome (Norton Sound),NA,USA-AKSTATE-NOME
+USA,AKSTATE,NORTONB,Norton Bay,NA,USA-AKSTATE-NORTONB
+USA,AKSTATE,NORTONSD1,Norton Sound District 1,NA,USA-AKSTATE-NORTONSD1
+USA,AKSTATE,NUNAKWIKD,Northern/Unakwik District,NA,USA-AKSTATE-NUNAKWIKD
+USA,AKSTATE,NUSHAGAK,Nushagak,NA,USA-AKSTATE-NUSHAGAK
+USA,AKSTATE,NUSHAGAKD,Nushagak District,NA,USA-AKSTATE-NUSHAGAKD
+USA,AKSTATE,NUSHAGAKR,Nushagak River,NA,USA-AKSTATE-NUSHAGAKR
+USA,AKSTATE,NUYAKUK,Nuyakuk,NA,USA-AKSTATE-NUYAKUK
+USA,AKSTATE,ORZINSKIL,Orzinski Lake,NA,USA-AKSTATE-ORZINSKIL
+USA,AKSTATE,PASAGSHAKR,Pasagshak River,NA,USA-AKSTATE-PASAGSHAKR
+USA,AKSTATE,PAULSBD,Pauls Bay Drainage,NA,USA-AKSTATE-PAULSBD
+USA,AKSTATE,PCHATHAM,Port Chatham (Outer D),NA,USA-AKSTATE-PCHATHAM
+USA,AKSTATE,PDIC,Port Dick and Island Creek,NA,USA-AKSTATE-PDIC
+USA,AKSTATE,PDICK,Port Dick (Outer D),NA,USA-AKSTATE-PDICK
+USA,AKSTATE,PERRYVILLED,Perryville District,NA,USA-AKSTATE-PERRYVILLED
+USA,AKSTATE,PGRAHAM,Port Graham,NA,USA-AKSTATE-PGRAHAM
+USA,AKSTATE,PGRAHAMSD,Port Graham (Southern D),NA,USA-AKSTATE-PGRAHAMSD
+USA,AKSTATE,PHEIDEN,PortHeiden,NA,USA-AKSTATE-PHEIDEN
+USA,AKSTATE,PMOLLERBT,PMollerBt,NA,USA-AKSTATE-PMOLLERBT
+USA,AKSTATE,PORTAGEB,Portage B (District110),NA,USA-AKSTATE-PORTAGEB
+USA,AKSTATE,PORTLAND,Portland (District 101),NA,USA-AKSTATE-PORTLAND
+USA,AKSTATE,PORTLOCK,Portlock (District113),NA,USA-AKSTATE-PORTLOCK
+USA,AKSTATE,PWS,Prince William Sound,NA,USA-AKSTATE-PWS
+USA,AKSTATE,PWSED,PWS Eastern District,NA,USA-AKSTATE-PWSED
+USA,AKSTATE,PWSNWD,PWS Northwestern District,NA,USA-AKSTATE-PWSNWD
+USA,AKSTATE,PWSSED,PWS Southeastern District,NA,USA-AKSTATE-PWSSED
+USA,AKSTATE,PWSSWD,PWS Southwest District,NA,USA-AKSTATE-PWSSWD
+USA,AKSTATE,PYBUSGA,Pybus/Ga (District110),NA,USA-AKSTATE-PYBUSGA
+USA,AKSTATE,RATZH,Ratz Hbr (District106),NA,USA-AKSTATE-RATZH
+USA,AKSTATE,REDOUBTL,Redoubt Lake,NA,USA-AKSTATE-REDOUBTL
+USA,AKSTATE,RESB,Resurrection Bay (Eastern D),NA,USA-AKSTATE-RESB
+USA,AKSTATE,ROCKYR,Rocky River,NA,USA-AKSTATE-ROCKYR
+USA,AKSTATE,ROCKYROD,Rocky River (Outer D),NA,USA-AKSTATE-ROCKYROD
+USA,AKSTATE,SAGINWB,Saginw By (District109),NA,USA-AKSTATE-SAGINWB
+USA,AKSTATE,SAKP,South AK Peninsula w/o Chignik,NA,USA-AKSTATE-SAKP
+USA,AKSTATE,SALISBURY,Salisbury (District113),NA,USA-AKSTATE-SALISBURY
+USA,AKSTATE,SALTERYL,Saltery Lake,NA,USA-AKSTATE-SALTERYL
+USA,AKSTATE,SANDYR,Sandy River,NA,USA-AKSTATE-SANDYR
+USA,AKSTATE,SASHINCNI,Sashin Creek (Northern Inside),NA,USA-AKSTATE-SASHINCNI
+USA,AKSTATE,SBPCKD,Sunday and Browns Peak Creek (Kamishak D),NA,USA-AKSTATE-SBPCKD
+USA,AKSTATE,SEAOTTER,SeaOtter (District103),NA,USA-AKSTATE-SEAOTTER
+USA,AKSTATE,SEBARAN,SE Baran (District109),NA,USA-AKSTATE-SEBARAN
+USA,AKSTATE,SELDOVIAB,Seldovia Bay  (Southern D),NA,USA-AKSTATE-SELDOVIAB
+USA,AKSTATE,SEYMOUR,Seymour (District111),NA,USA-AKSTATE-SEYMOUR
+USA,AKSTATE,SHAKTOOLIK,Shaktoolik,NA,USA-AKSTATE-SHAKTOOLIK
+USA,AKSTATE,SHAKTOOLIKNS,Shaktoolik (Norton Sound),NA,USA-AKSTATE-SHAKTOOLIKNS
+USA,AKSTATE,SHIPLEY,Shipley (District105),NA,USA-AKSTATE-SHIPLEY
+USA,AKSTATE,SITKA,Sitka,NA,USA-AKSTATE-SITKA
+USA,AKSTATE,SITKAS,Sitka Sd (District113),NA,USA-AKSTATE-SITKAS
+USA,AKSTATE,SITUKR,Situk River,NA,USA-AKSTATE-SITUKR
+USA,AKSTATE,SLOCUM,Slocum (District113),NA,USA-AKSTATE-SLOCUM
+USA,AKSTATE,SNAKER,Snake River,NA,USA-AKSTATE-SNAKER
+USA,AKSTATE,SPEELL,Speel Lake,NA,USA-AKSTATE-SPEELL
+USA,AKSTATE,STEPHENS,Stephens (District111),NA,USA-AKSTATE-STEPHENS
+USA,AKSTATE,STIKINE,Stikine (District108),NA,USA-AKSTATE-STIKINE
+USA,AKSTATE,SWADMIR,SWAdmir (District112),NA,USA-AKSTATE-SWADMIR
+USA,AKSTATE,TAHLTAN,Tahltan,NA,USA-AKSTATE-TAHLTAN
+USA,AKSTATE,TAKUR,Taku River,NA,USA-AKSTATE-TAKUR
+USA,AKSTATE,TANAKEE,Tenakee (District112),NA,USA-AKSTATE-TANAKEE
+USA,AKSTATE,TEBENKOF,Tebenkof (District109),NA,USA-AKSTATE-TEBENKOF
+USA,AKSTATE,THREEH,ThreeHills,NA,USA-AKSTATE-THREEH
+USA,AKSTATE,TOG,Togiak District,NA,USA-AKSTATE-TOG
+USA,AKSTATE,TOGD,Togiak District,NA,USA-AKSTATE-TOGD
+USA,AKSTATE,TOGIAK,Togiak,NA,USA-AKSTATE-TOGIAK
+USA,AKSTATE,TOTEMB,Totem By (District106),NA,USA-AKSTATE-TOTEMB
+USA,AKSTATE,TUTKASD,Tutka (Southern D),NA,USA-AKSTATE-TUTKASD
+USA,AKSTATE,UCOOKI,Upper Cook Inlet,NA,USA-AKSTATE-UCOOKI
+USA,AKSTATE,UGANIKL,Uganik Lake,NA,USA-AKSTATE-UGANIKL
+USA,AKSTATE,UGASHIK,Ugashik,NA,USA-AKSTATE-UGASHIK
+USA,AKSTATE,UNALAKLEET,Unalakleet,NA,USA-AKSTATE-UNALAKLEET
+USA,AKSTATE,UNALAKLEETNS,Unalakleet (Norton Sound),NA,USA-AKSTATE-UNALAKLEETNS
+USA,AKSTATE,UNIONB,Union By (District107),NA,USA-AKSTATE-UNIONB
+USA,AKSTATE,URSUSCL,Ursus Cove and Lagoon,NA,USA-AKSTATE-URSUSCL
+USA,AKSTATE,WADMIRAL,WAdmiral (District112),NA,USA-AKSTATE-WADMIRAL
+USA,AKSTATE,WBEHM,WBehm (District 101),NA,USA-AKSTATE-WBEHM
+USA,AKSTATE,WCRAWFISH,Wcrawfish (District113),NA,USA-AKSTATE-WCRAWFISH
+USA,AKSTATE,WHALEB,Whale By (District113),NA,USA-AKSTATE-WHALEB
+USA,AKSTATE,WHALEP,Whale Pe (District106),NA,USA-AKSTATE-WHALEP
+USA,AKSTATE,WINDYC,Windy Creek (Outer D),NA,USA-AKSTATE-WINDYC
+USA,AKSTATE,WOOD,Wood,NA,USA-AKSTATE-WOOD
+USA,AKSTATE,WOODR,Wood River,NA,USA-AKSTATE-WOODR
+USA,AKSTATE,YUKONRFR,Yukon River Fall Run,NA,USA-AKSTATE-YUKONRFR
+USA,AKSTATE,YUKONRSR,Yukon River Summer Run,NA,USA-AKSTATE-YUKONRSR
+USA,MDSTATE,CHESB,Chesapeake Bay,NA,USA-MDSTATE-CHESB
+USA,NMFS,5Y,Gulf of Maine,NA,USA-NMFS-5Y
+USA,NMFS,5YCHATT,Gulf of Maine / Cape Hatteras,NA,USA-NMFS-5YCHATT
+USA,NMFS,5YZ,Gulf of Maine / Georges Bank,NA,USA-NMFS-5YZ
+USA,NMFS,5YZSNE,Gulf of Maine / Georges Bank-Southern New England,NA,USA-NMFS-5YZSNE
+USA,NMFS,5Z,Georges Bank,NA,USA-NMFS-5Z
+USA,NMFS,5ZMAB,Georges Bank and Mid-Atlantic Bight,NA,USA-NMFS-5ZMAB
+USA,NMFS,5ZSNE,Georges Bank-Southern New England,NA,USA-NMFS-5ZSNE
+USA,NMFS,AI,Aleutian Islands,NA,USA-NMFS-AI
+USA,NMFS,AIES,Aleutian Islands Eastern segment,NA,USA-NMFS-AIES
+USA,NMFS,AIWS,Aleutian Islands Western segment,NA,USA-NMFS-AIWS
+USA,NMFS,ALASKA,Alaska,NA,USA-NMFS-ALASKA
+USA,NMFS,ATL,Atlantic,NA,USA-NMFS-ATL
+USA,NMFS,ATLC,Atlantic Coast,NA,USA-NMFS-ATLC
+USA,NMFS,BB,Bristol Bay,NA,USA-NMFS-BB
+USA,NMFS,BOGO,Bogoslof,NA,USA-NMFS-BOGO
+USA,NMFS,BS,Bering Sea,NA,USA-NMFS-BS
+USA,NMFS,BSAI,Bering Sea and Aleutian Islands,NA,USA-NMFS-BSAI
+USA,NMFS,CAL,California,NA,USA-NMFS-CAL
+USA,NMFS,CARIB,Caribbean,NA,USA-NMFS-CARIB
+USA,NMFS,CBS,Central Bering Sea,NA,USA-NMFS-CBS
+USA,NMFS,CCOD5Y,Cape Cod / Gulf of Maine,NA,USA-NMFS-CCOD5Y
+USA,NMFS,CPCOAST,Central Pacific Coast,NA,USA-NMFS-CPCOAST
+USA,NMFS,CWGA,Central Western Gulf of Alaska,NA,USA-NMFS-CWGA
+USA,NMFS,CWPAC,Central Western Pacific,NA,USA-NMFS-CWPAC
+USA,NMFS,EBS,Eastern Bering Sea,NA,USA-NMFS-EBS
+USA,NMFS,EBSAI,Eastern Bering Sea and Aleutian Islands,NA,USA-NMFS-EBSAI
+USA,NMFS,EBSAIGA,Eastern Bering Sea / Aleutian Islands / Gulf of Alaska,NA,USA-NMFS-EBSAIGA
+USA,NMFS,EBSGA,Eastern Bering Sea and Gulf of Alaska,NA,USA-NMFS-EBSGA
+USA,NMFS,EGB,Eastern Georges Bank,NA,USA-NMFS-EGB
+USA,NMFS,EGM,Eastern Gulf of Mexico,NA,USA-NMFS-EGM
+USA,NMFS,GA,Gulf of Alaska,NA,USA-NMFS-GA
+USA,NMFS,GB,Georges Bank,NA,USA-NMFS-GB
+USA,NMFS,GM,Gulf of Mexico,NA,USA-NMFS-GM
+USA,NMFS,GMATL,Gulf of Mexico and Atlantic,NA,USA-NMFS-GMATL
+USA,NMFS,GMSATL,Gulf of Mexico and South Atlantic,NA,USA-NMFS-GMSATL
+USA,NMFS,GOMCHATT,Gulf of Maine / Cape Hatteras,NA,USA-NMFS-GOMCHATT
+USA,NMFS,GOMNGB,Gulf of Maine / Northern Georges Bank,NA,USA-NMFS-GOMNGB
+USA,NMFS,MATLC,Mid-Atlantic Coast,NA,USA-NMFS-MATLC
+USA,NMFS,MHI,Main Hawaiian Islands,NA,USA-NMFS-MHI
+USA,NMFS,NATL,North Atlantic,NA,USA-NMFS-NATL
+USA,NMFS,NCAL,Northern California,NA,USA-NMFS-NCAL
+USA,NMFS,NPAC,North Pacific,NA,USA-NMFS-NPAC
+USA,NMFS,NPCOAST,Northern Pacific Coast,NA,USA-NMFS-NPCOAST
+USA,NMFS,NS,Norton Sound,NA,USA-NMFS-NS
+USA,NMFS,NWATL,Northwestern Atlantic,NA,USA-NMFS-NWATL
+USA,NMFS,NWATLC,Northwestern Atlantic Coast,NA,USA-NMFS-NWATLC
+USA,NMFS,ORECOAST,Oregon Coast,NA,USA-NMFS-ORECOAST
+USA,NMFS,PCOAST,Pacific Coast,NA,USA-NMFS-PCOAST
+USA,NMFS,PI,Pribilof Islands,NA,USA-NMFS-PI
+USA,NMFS,PR,Puerto Rico,NA,USA-NMFS-PR
+USA,NMFS,SATL,South Atlantic,NA,USA-NMFS-SATL
+USA,NMFS,SATLC,Southern Atlantic coast,NA,USA-NMFS-SATLC
+USA,NMFS,SATLCGM,Southern Atlantic coast and Gulf of Mexico,NA,USA-NMFS-SATLCGM
+USA,NMFS,SCAL,Southern California,NA,USA-NMFS-SCAL
+USA,NMFS,SEFL,Southeast Florida,NA,USA-NMFS-SEFL
+USA,NMFS,SEGA,Southeast Gulf of Alaska,NA,USA-NMFS-SEGA
+USA,NMFS,SGBMATL,Southern Georges Bank / Mid-Atlantic,NA,USA-NMFS-SGBMATL
+USA,NMFS,SMI,Saint Matthews Island,NA,USA-NMFS-SMI
+USA,NMFS,SNE,Southern New England,NA,USA-NMFS-SNE
+USA,NMFS,SNEMATL,Southern New England /Mid Atlantic,NA,USA-NMFS-SNEMATL
+USA,NMFS,SNEMATLB,Southern New England /Mid Atlantic Bight,NA,USA-NMFS-SNEMATLB
+USA,NMFS,SPCOAST,Southern Pacific Coast,NA,USA-NMFS-SPCOAST
+USA,NMFS,STC,Saint Croix,NA,USA-NMFS-STC
+USA,NMFS,STT_STJ,Saint Thomas / Saint John,NA,USA-NMFS-STT_STJ
+USA,NMFS,WASH,Washington,NA,USA-NMFS-WASH
+USA,NMFS,WATL,Western Atlantic,NA,USA-NMFS-WATL
+USA,NMFS,WGM,Western Gulf of Mexico,NA,USA-NMFS-WGM
+USA,WASTATE,COLR,Columbia R,NA,USA-WASTATE-COLR
+USA,WASTATE,DOSEWHC,Dosewallips (Hood Canal),NA,USA-WASTATE-DOSEWHC
+USA,WASTATE,DUCKA,Duckabush (Hood Canal),NA,USA-WASTATE-DUCKA
+USA,WASTATE,DUNGENHC,Dungeness (Juan de Fuca),NA,USA-WASTATE-DUNGENHC
+USA,WASTATE,GRAYH,Grays Harbour,NA,USA-WASTATE-GRAYH
+USA,WASTATE,HHAMMAHC,Hamma Hamma (Hood Canal),NA,USA-WASTATE-HHAMMAHC
+USA,WASTATE,HOODC,Hood Canal,NA,USA-WASTATE-HOODC
+USA,WASTATE,JDFS,Juan de Fuca Straits,NA,USA-WASTATE-JDFS
+USA,WASTATE,LWASH,Lake Washington,NA,USA-WASTATE-LWASH
+USA,WASTATE,NISQPS,Nisqually (Puget Sound),NA,USA-WASTATE-NISQPS
+USA,WASTATE,NOOKSPS,Nooksack (Puget Sound),NA,USA-WASTATE-NOOKSPS
+USA,WASTATE,NSR,Nooksack and Samish Rivers,NA,USA-WASTATE-NSR
+USA,WASTATE,PUYALLUPPS,Puyallup (Puget Sound),NA,USA-WASTATE-PUYALLUPPS
+USA,WASTATE,QUIN,Quinault,NA,USA-WASTATE-QUIN
+USA,WASTATE,SKAGPS,Skagit (Puget Sound),NA,USA-WASTATE-SKAGPS
+USA,WASTATE,SKAGR,Skagit River,NA,USA-WASTATE-SKAGR
+USA,WASTATE,SNOHPS,Snohomish (Puget Sound),NA,USA-WASTATE-SNOHPS
+USA,WASTATE,SSOUNDFR,South Sound Fall Run,NA,USA-WASTATE-SSOUNDFR
+USA,WASTATE,SSOUNDSR,South Sound Summer Run,NA,USA-WASTATE-SSOUNDSR
+USA,WASTATE,SSOUNDWR,South Sound Winter Run,NA,USA-WASTATE-SSOUNDWR
+USA,WASTATE,SSR,Stillaguamish and Snohomish Rivers,NA,USA-WASTATE-SSR
+USA,WASTATE,STILLAPS,Stillaguamish (Puget Sound),NA,USA-WASTATE-STILLAPS
+USA,WASTATE,WA,Washington,NA,USA-WASTATE-WA
+USA,WASTATE,WILLB,Willapa Bay,NA,USA-WASTATE-WILLB

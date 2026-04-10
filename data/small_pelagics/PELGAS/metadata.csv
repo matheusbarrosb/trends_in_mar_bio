@@ -1,0 +1,20 @@
+Parameter;Description;;;;;;;
+sp;Species code, Rubbin like (GENU-SPE);;;;;;;
+cruise;Survey name;;;;;;;
+wbiom;Biomass estimate (metric tons);;;;;;;
+wabun;Abundance estimate (thousands of fish);;;;;;;
+wCV;Estimation coefficient of variation;;;;;;;
+area;Survey area (squared nautical miles);;;;;;;
+year;Survey year;;;;;;;
+spname;Common species name;;;;;;;
+sciName;Scientific species name;;;;;;;
+;;;;;;;;
+Example:;;;;;;;;
+sp;cruise;wbiom;wabun;wCV;area;year;spname;sciName
+CAPR-APE;PELGAS2002;158,800547362;3440,3915467;0,570427616215905;21154;2002;Boarfish;Capros aper
+CAPR-APE;PELGAS2014;17593,3058867743;344390,897997254;0,048806409267156;20648,1234028111;2014;Boarfish;Capros aper
+CAPR-APE;PELGAS2004;2471,18137800367;55919,1540100926;0,35725689800018;20900;2004;Boarfish;Capros aper
+CAPR-APE;PELGAS2010;4838,8669;185195,3362;0,215118255;24264,5;2010;Boarfish;Capros aper
+CAPR-APE;PELGAS2017;11247,4058366187;206104,091247086;0,083971390836963;24194,9348090436;2017;Boarfish;Capros aper
+CAPR-APE;PELGAS2007;3568,615278;114548,40921;0,351523175641264;16650;2007;Boarfish;Capros aper
+
