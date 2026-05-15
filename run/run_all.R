@@ -13,7 +13,7 @@ library(patchwork)
 # data wrangling --------------------------------------
 
 #### 1. main grouped data ####
-data_path = here("data/abundance/Data Gathering - Data Format (1).csv")
+data_path = here("data", "abundance", "Data Gathering - Data Format (1).csv")
 raw_data = read.csv(data_path)
 main_d = raw_data %>%
   filter(Region %in% c("Marine Mammals", "marine birds", "elasmobranch", "turtle")) %>%
@@ -25,7 +25,7 @@ main_d = raw_data %>%
   select(Group, ID, Taxa, Year, Value)
 
 #### 2. seagrasses ####
-seagrass_d = read.csv(here("data/abundance/clean_area_ts_for_analysis.csv")) %>% 
+seagrass_d = read.csv(here("data", "abundance", "clean_area_ts_for_analysis.csv")) %>% 
   filter(year > 1900) %>%
   mutate(
     Group = "seagrass",
@@ -37,9 +37,9 @@ seagrass_d = read.csv(here("data/abundance/clean_area_ts_for_analysis.csv")) %>%
   select(Group, ID, Taxa, Year, Value)
 
 #### 3. kelp ####
-kelp_genus_family = read.csv(here("data/abundance/kelp_family_genus.csv"))
+kelp_genus_family = read.csv(here("data", "abundance", "kelp_family_genus.csv"))
 
-kelp_d = readRDS(here("data/abundance/krumhansl_kelp_timeseries_raw.RDS")) %>%
+kelp_d = readRDS(here("data", "abundance", "krumhansl_kelp_timeseries_raw.RDS")) %>%
   mutate(Genus = case_when(
     str_detect(tolower(Taxon), "agarum") ~ "Agarum",
     str_detect(tolower(Taxon), "saccharina") ~ "Saccharina",
@@ -72,7 +72,7 @@ kelp_d = readRDS(here("data/abundance/krumhansl_kelp_timeseries_raw.RDS")) %>%
   select(Group, ID, Taxa, Year, Value)
 
 #### 4. RAM dataset - exploited fishes ####
-ram_d = read.csv(here("data/abundance/final_dataset.csv")) %>%
+ram_d = read.csv(here("data", "abundance", "final_dataset.csv")) %>%
   group_by(stockid) %>%
   filter(unit == min(as.character(unit), na.rm = TRUE)) %>%
   ungroup() %>%
@@ -92,7 +92,7 @@ ram_d = read.csv(here("data/abundance/final_dataset.csv")) %>%
   select(Group, ID, Taxa, Year, Value)
 
 #### 5. deep sea pelagics - unexploited ####
-mycto_d = read.csv(here("data/abundance/myctobase_clean_unexploitedpelagics.csv")) %>%
+mycto_d = read.csv(here("data", "abundance", "myctobase_clean_unexploitedpelagics.csv")) %>%
   drop_na(year) %>%
   mutate(
     Group = "deep sea pelagics",
@@ -104,7 +104,7 @@ mycto_d = read.csv(here("data/abundance/myctobase_clean_unexploitedpelagics.csv"
   select(Group, ID, Taxa, Year, Value)
 
 #### 6. non-exploited bony fishes ####
-noCfish_d = readRDS(here("data/abundance/LPI_data_CorNC.rds")) %>%
+noCfish_d = readRDS(here("data", "abundance", "LPI_data_CorNC.rds")) %>%
   filter(custom_class == "Bony fish - NC") %>%
   mutate(
     Group = "non-exploited fish",
@@ -116,6 +116,12 @@ noCfish_d = readRDS(here("data/abundance/LPI_data_CorNC.rds")) %>%
   select(Group, ID, Taxa, Year, Value)
 
 #### 7. unified data ####
+taxa_cutoffs = data.frame(
+  Group = c("Marine Mammals", "marine birds", "turtle", "elasmobranch", 
+            "exploited fish", "non-exploited fish", "Crustaceans", "seagrass", "kelp"),
+  Cutoff_Year = c(1950, 1950, 1950, 1950, 1950, 1950, 1960, 1950, 1980)
+)
+
 unified_d = bind_rows(main_d, seagrass_d, kelp_d, ram_d, mycto_d, noCfish_d) %>%
   group_by(Group, ID) %>%
   mutate(
@@ -138,9 +144,12 @@ unified_d = bind_rows(main_d, seagrass_d, kelp_d, ram_d, mycto_d, noCfish_d) %>%
       .default = as.character(Group)
     ),
     ID = droplevels(as.factor(ID)),
-    Taxa = droplevels(as.factor(Taxa)),
-    Group = droplevels(as.factor(Group))
+    Taxa = droplevels(as.factor(Taxa))
   ) %>%
+  left_join(taxa_cutoffs, by = "Group") %>%
+  filter(Year >= Cutoff_Year) %>%
+  select(-Cutoff_Year) %>%
+  mutate(Group = droplevels(as.factor(Group))) %>%
   group_by(Group) %>%
   mutate(Year_scaled = Year - min(Year) + 1) %>%
   ungroup()
@@ -153,11 +162,16 @@ if (!exists("stan_fits")) {
 taxa_groups = unified_d$Group %>% levels() %>% as.character()
 
 rerun = c(
-  FALSE, FALSE, FALSE, # Crustaceans  |  elasmobranch | exploited fish
-  FALSE, TRUE, FALSE, # kelp | marine birds | mammals 
-  FALSE, FALSE, FALSE  # non-exploited fish | seagrass | turtle
+  "Crustaceans" = FALSE,
+  "elasmobranch" = FALSE,
+  "exploited fish" = FALSE,
+  "kelp" = FALSE,
+  "Marine Mammals" = FALSE,
+  "marine birds" = TRUE,
+  "non-exploited fish" = FALSE,
+  "seagrass" = FALSE,
+  "turtle" = FALSE
 )
-names(rerun) = taxa_groups
 
 # prior grid configuration:
 # 1 = exponential(1) restrictive, shrinks variance toward zero
@@ -199,8 +213,15 @@ compiled_marss = stan_model(file = here("model", "MARSS.stan"))
 
 for (taxa_name in taxa_groups) {
   
-  if (!rerun[taxa_name]) next
-  cat("Running models for taxa group:", taxa_name, "\n")
+  out_dir = here("res", "model_fits", taxa_name)
+  out_file = file.path(out_dir, "fit.rds")
+  
+  if (!rerun[taxa_name]) {
+    if (is.null(stan_fits[[taxa_name]]) && file.exists(out_file)) {
+      stan_fits[[taxa_name]] = readRDS(out_file)
+    }
+    next
+  }
   
   taxa_d = unified_d %>%
     filter(Group == taxa_name) %>%
@@ -227,7 +248,6 @@ for (taxa_name in taxa_groups) {
     obs_t = prior_grid$obs_type[i]
     proc_t = prior_grid$proc_type[i]
     
-    cat(" Running model with obs_type =", obs_t, "and proc_type =", proc_t, "\n")
     fit = run_sensitivity_model(obs_t, proc_t, stan_data, compiled_marss)
     
     log_lik = extract_log_lik(fit)
@@ -242,6 +262,9 @@ for (taxa_name in taxa_groups) {
   }
   
   stan_fits[[taxa_name]] = results_list
+  
+  dir.create(out_dir, recursive = TRUE, showWarnings = FALSE)
+  saveRDS(results_list, out_file)
 }
 
 # model comparison ------------------------------------
@@ -343,102 +366,3 @@ sensitivity_plot = ggplot(sensitivity_df, aes(x = Year, y = Abundance_Index, col
   guides(color = guide_legend(nrow = 3, byrow = TRUE))
 
 print(sensitivity_plot)
-
-# final unified plot ----------------------------------
-all_trends_list = list()
-all_raw_list = list()
-
-for (taxa_name in taxa_groups) {
-  
-  if (is.null(stan_fits[[taxa_name]])) next
-  
-  t_d = unified_d %>% filter(Group == taxa_name)
-  fit = stan_fits[[taxa_name]][[5]]$stan_fit
-  
-  x_summary = as.data.frame(summary(fit, pars = "x")$summary)
-  
-  total_stocks = n_distinct(t_d$ID)
-  coverage_info = t_d %>%
-    group_by(Year) %>%
-    summarise(n_stocks = n_distinct(ID), .groups = "drop") %>%
-    mutate(fraction = n_stocks / total_stocks)
-  
-  coverage_threshold = case_when(
-    taxa_name == "non-exploited fish" ~ 0.10,
-    taxa_name == "exploited fish" ~ 0.15,
-    .default = 0.20
-  )
-  high_cov_years = coverage_info$Year[coverage_info$fraction > coverage_threshold]
-  
-  trend_table = data.frame(
-    Group = taxa_name,
-    Year = min(t_d$Year) + (1:nrow(x_summary)) - 1,
-    estimate = x_summary$mean,
-    conf.low = x_summary[["2.5%"]],
-    conf.high = x_summary[["97.5%"]]
-  ) %>% left_join(coverage_info, by = "Year")
-  
-  target_level = median(t_d$Value_scale[t_d$Year %in% high_cov_years], na.rm = TRUE)
-  model_level_log = trend_table$estimate[trend_table$Year %in% high_cov_years]
-  model_level_geom = mean(exp(model_level_log), na.rm = TRUE)
-  scalar = abs(target_level / model_level_geom)
-  
-  trend_table = trend_table %>%
-    mutate(
-      Abundance_Index = exp(estimate) * scalar,
-      Upper_Bound = exp(conf.high) * scalar,
-      Lower_Bound = exp(conf.low) * scalar
-    )
-  
-  all_trends_list[[taxa_name]] = trend_table %>% select(Group, Year, Abundance_Index, Lower_Bound, Upper_Bound)
-  all_raw_list[[taxa_name]] = t_d %>% select(Group, Year, ID, Value_scale) %>% left_join(coverage_info, by = "Year")
-}
-
-stan_trends_df = bind_rows(all_trends_list)
-stan_raw_df = bind_rows(all_raw_list)
-
-coral_d = read.csv(here("data/abundance/souter-et-al_data-models.csv")) %>%
-  filter(region == "Global", category == "Hard coral") %>%
-  mutate(Group = "Hard coral", Year = year, Abundance_Index = (mean)/mean(mean), Lower_Bound = (lower_ci_95)/mean(mean), Upper_Bound = (higher_ci_95)/mean(mean)) %>%
-  select(Group, Year, Abundance_Index, Lower_Bound, Upper_Bound)
-
-mangrove_d = readxl::read_xlsx(here("data/abundance/gmw_v3_country_statistics_ha.xlsx")) %>%
-  pivot_longer(cols = matches("^\\d{4}$"), names_to = "Year", values_to = "Area") %>%
-  filter(Name == "Global (km2)") %>% drop_na(Area) %>%
-  mutate(Group = "Mangrove", Year = as.numeric(Year), Abundance_Index = (Area)/mean(Area), Lower_Bound = NA, Upper_Bound = NA) %>%
-  select(Group, Year, Abundance_Index, Lower_Bound, Upper_Bound)
-
-saltmarsh_d = read.csv(here("data/abundance/SaltMarshExtent.csv")) %>%
-  summarise(`2000-2004` = sum(`Area_2000-2004.Ha`, na.rm = TRUE), `2005-2009` = sum(`Area_ 2005-2009.Ha`, na.rm = TRUE), `2010-2014` = sum(`Area_ 2010-2014.Ha`, na.rm = TRUE), `2015-2019` = sum(`Area_ 2015-2019.Ha`, na.rm = TRUE)) %>%
-  pivot_longer(cols = everything(), names_to = "Timeline", values_to = "Global_Area") %>%
-  mutate(
-    Group = "Salt marsh",
-    Year = case_when(
-      Timeline == "2000-2004" ~ 2002,
-      Timeline == "2005-2009" ~ 2007,
-      Timeline == "2010-2014" ~ 2012,
-      Timeline == "2015-2019" ~ 2017
-    ),
-    Abundance_Index = (Global_Area)/mean(Global_Area),
-    Lower_Bound = NA,
-    Upper_Bound = NA
-  ) %>%
-  select(Group, Year, Abundance_Index, Lower_Bound, Upper_Bound)
-
-combined_trends = bind_rows(stan_trends_df, coral_d, mangrove_d, saltmarsh_d)
-combined_trends$Group = factor(combined_trends$Group, levels = c(taxa_groups, "Hard coral", "Mangrove", "Salt marsh"))
-stan_raw_df$Group = factor(stan_raw_df$Group, levels = c(taxa_groups, "Hard coral", "Mangrove", "Salt marsh"))
-
-final_figure = ggplot() +
-  geom_boxplot(data = stan_raw_df, aes(x = Year, y = Value_scale, group = Year, fill = fraction), outliers = FALSE, color = NA, linewidth = 0.3, width = 1) +
-  scale_fill_gradient(low = "white", high = "forestgreen", name = "Coverage", limits = c(0, 1)) +
-  ggnewscale::new_scale_fill() +
-  stat_summary(data = stan_raw_df, aes(x = Year, y = Value_scale, group = Year), fun = median, geom = "point", color = "darkslategrey", size = 1, alpha = 0.8, shape = 19) +
-  geom_ribbon(data = combined_trends, aes(x = Year, ymin = Lower_Bound, ymax = Upper_Bound), fill = "cornflowerblue", alpha = 0.5) +
-  geom_line(data = combined_trends, aes(x = Year, y = Abundance_Index), color = "darkblue", linewidth = 1) +
-  facet_wrap(~ Group, scales = "free_y", ncol = 3) +
-  theme_classic() +
-  theme(legend.position = "bottom", strip.text = element_text(size = 12, face = "bold"), strip.background = element_blank()) +
-  labs(y = "Relative abundance / area", x = "Year")
-
-print(final_figure)
