@@ -4,3 +4,4 @@
 .RDataTmp1
 .Rhistory
 .Rproj.user/
+res/model_fits/**/*.rds
