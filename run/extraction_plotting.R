@@ -384,7 +384,29 @@ combined_trends = bind_rows(stan_trends_df, coral_d, mangrove_d, saltmarsh_d)
 combined_trends$Group = factor(combined_trends$Group, levels = c(taxa_groups, "Hard coral", "Mangrove", "Salt marsh"))
 stan_raw_df$Group = factor(stan_raw_df$Group, levels = c(taxa_groups, "Hard coral", "Mangrove", "Salt marsh"))
 
-# plottting ---------
+group_mapping <- c(
+  "Marine Mammals" = "Mammals",
+  "marine birds" = "Birds",
+  "turtle" = "Turtles",           
+  "elasmobranch" = "Cartilaginous fish",
+  "exploited fish" = "Exploited fish",
+  "non-exploited fish" = "Non-exploited fish",
+  "Crustaceans" = "Exploited crustaceans",
+  "Hard coral" = "Hard coral % cover",
+  "kelp" = "Kelp",
+  "seagrass" = "Seagrasses",
+  "Mangrove" = "Mangroves",
+  "Salt marsh" = "Salt marshes"
+)
+
+stan_raw_df$Group <- factor(stan_raw_df$Group, 
+                            levels = names(group_mapping), 
+                            labels = unname(group_mapping))
+
+combined_trends$Group <- factor(combined_trends$Group, 
+                                levels = names(group_mapping), 
+                                labels = unname(group_mapping))
+
 final_figure = ggplot() +
   geom_boxplot(data = stan_raw_df, aes(x = Year, y = Value_scale, group = Year, fill = fraction), outliers = FALSE, color = NA, linewidth = 0.3, width = 1) +
   scale_fill_gradient(low = "white", high = "forestgreen", name = "Coverage", limits = c(0, 1)) +
@@ -395,23 +417,33 @@ final_figure = ggplot() +
   facet_wrap(~ Group, ncol = 3, scales = "free_y") +
   facetted_pos_scales(
     y = list(
-      Group == "Marine Mammals" ~ scale_y_continuous(limits = c(0, 3)),
-      Group == "marine birds" ~ scale_y_continuous(limits = c(0, 3)),
-      Group == "elasmobranch" ~ scale_y_continuous(limits = c(0, 3)),
-      Group == "Crustaceans" ~ scale_y_continuous(limits = c(0, 7)),
-      Group == "exploited fish" ~ scale_y_continuous(limits = c(0, 3)),
-      Group == "non-exploited fish" ~ scale_y_continuous(limits = c(0, 3)),
-      #     Group == "kelp" ~ scale_y_continuous(limits = c(0, 4)),
-      Group == "seagrass" ~ scale_y_continuous(limits = c(0, 3)),
-      Group == "turtle" ~ scale_y_continuous(limits = c(0, 7)),
-      Group == "Hard coral" ~ scale_y_continuous(limits = c(0, 1.5)),
-      Group == "Mangrove" ~ scale_y_continuous(limits = c(0, 1.5)),
-      Group == "Salt marsh" ~ scale_y_continuous(limits = c(0, 1.5))
+      Group == "Mammals" ~ scale_y_continuous(limits = c(0, 2)),
+      Group == "Birds" ~ scale_y_continuous(limits = c(0, 2)),
+      Group == "Cartilaginous fish" ~ scale_y_continuous(limits = c(0, 2)),
+      Group == "Exploited crustaceans" ~ scale_y_continuous(limits = c(0, 3)),
+      Group == "Exploited fish" ~ scale_y_continuous(limits = c(0, 2)),
+      Group == "Non-exploited fish" ~ scale_y_continuous(limits = c(0, 3)),
+      Group == "Kelp" ~ scale_y_continuous(limits = c(0, 0.20)),
+      Group == "Seagrasses" ~ scale_y_continuous(limits = c(0, 2)),
+      Group == "Turtles" ~ scale_y_continuous(limits = c(0, 3)),
+      Group == "Hard coral % cover" ~ scale_y_continuous(limits = c(0, 1.5)),
+      Group == "Mangroves" ~ scale_y_continuous(limits = c(0, 1.2)),
+      Group == "Salt marshes" ~ scale_y_continuous(limits = c(0, 1.2))
     )
   ) +
   theme_classic() +
   theme(legend.position = "bottom", strip.text = element_text(size = 12, face = "bold"), strip.background = element_blank()) +
   labs(y = "Relative abundance / area", x = "Year");final_figure
+
+lambda_plot = stan_raw_df %>%
+  group_by(ID,Group) %>%
+  arrange(ID,Year) %>%
+  summarise(mean_change = log(last(Value_scale))-log(first(Value_scale))) %>%
+  filter(abs(mean_change)<10)%>%
+  ggplot(aes(x=mean_change)) + geom_histogram() + facet_wrap(~Group, scales = "free_y") + 
+  geom_vline(xintercept = 0, color = "red", linetype = "dashed") +
+  theme_classic() + labs(y="Number of populations",x="Mean change in abundance (log scale)");lambda_plot
+
 
 sensitivity_df = bind_rows(sensitivity_trends_list)
 
