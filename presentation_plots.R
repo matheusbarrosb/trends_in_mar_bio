@@ -57,12 +57,16 @@ TheD = read.csv('data/abundance/Data Gathering - Data Format (1).csv')%>%
   filter(Value_log>-10,Year >1950) 
 
 TheD %>%
+  filter(ID %in% sample(unique(ID), 100)) %>%
   ggplot(aes(x=Year,y=Value_log, group=ID)) +
-  geom_line(color = "midnightblue", alpha = 0.05) + 
-  geom_point(color = "midnightblue", alpha = 0.001, size = 0.5) +
+  ochRe::scale_colour_ochre(palette="lorikeet")+
+  geom_line(aes(color = ID), alpha = 0.8,size=1) + 
+  geom_point(aes(color = ID), alpha = 0.8, size = 1) +
   geom_hline(yintercept=0, color = "grey50") +
-  labs(y="Mean-scaled Abundance (log)",x="Year")+
-  theme_classic()
+  labs(y="Mean-scaled index (log)",x="Year")+
+  theme_classic()+
+  theme(legend.position = "none")
+
 
 set.seed(420)
 year = seq(1950,2020,by=1)
