@@ -1,24 +1,24 @@
-﻿Taxonomic Group,Species Number,Biomass of carbon (billion tons),Class
-Arthropods,"50,682","1,000,000,000",
-Molluscs,"47,000","200,000,000",
-Protists,"21,021","2,000,000,000",
-Bacteria,"20,000","2,100,000,000",
-Fishes,"16,733","700,000,000",
-Annelids,"14,000",NA,
-Platyhelminthes,"11,690",NA,
-Nematodes,"11,400","10,000,000",
-Sponges,"8,553",NA,
-Plants,"7,600","1,000,000,000",
-Echinoderms,"7,292",NA,
-Corals,"6,323","50,000,000",habitat
-Bryozoa,"5,900",NA,
-Hydrozoa jelly,"3,426","40,000,000",
-Tunicates,"3,020",NA,
-Birds,641,NA,
-Sharks,530,NA,
-Mammals,135,"6,800,000",
-Reptiles,110,NA,
-Mangroves,73,"1,500,000,000",habitat
-Seagrasses,72,"100,000,000",habitat
-Macroalgae,12000,"100,000,000",habitat
-Salt Marshes,200,"20,000,000",habitat
+﻿Taxonomic Group,Species Number,Biomass of carbon (billion tons),Class,
+Arthropods,"50,682","1,000,000,000",,
+Molluscs,"47,000","200,000,000",,
+Protists,"21,021","2,000,000,000",,
+Bacteria,"20,000","2,100,000,000",,
+Fishes,"16,733","700,000,000",,
+Annelids,"14,000",NA,,
+Platyhelminthes,"11,690",NA,,
+Nematodes,"11,400","10,000,000",,
+Sponges,"8,553",NA,,
+Algae/Seagrass,"7,600","1,000,000,000",,
+Echinoderms,"7,292",NA,,
+Corals,"6,323","50,000,000",habitat,
+Bryozoa,"5,900",NA,,
+Hydrozoa jelly,"3,426","40,000,000",,
+Tunicates,"3,020",NA,,
+Birds,641,"200,000",,guess
+Sharks,530,"70,000,000",,guess
+Mammals,135,"6,800,000",,
+Reptiles,110,"10,000",,guess
+Mangroves,73,"1,500,000,000",habitat,
+Seagrasses,72,"100,000,000",habitat,
+Macroalgae,12000,"100,000,000",habitat,
+Salt Marshes,200,"20,000,000",habitat,

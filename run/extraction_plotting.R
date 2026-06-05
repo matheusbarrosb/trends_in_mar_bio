@@ -414,18 +414,18 @@ final_figure = ggplot() +
   stat_summary(data = stan_raw_df, aes(x = Year, y = Value_scale, group = Year), fun = median, geom = "point", color = "darkslategrey", size = 1, alpha = 0.8, shape = 19) +
   geom_ribbon(data = combined_trends, aes(x = Year, ymin = Lower_Bound, ymax = Upper_Bound), fill = "cornflowerblue", alpha = 0.3) +
   geom_line(data = combined_trends, aes(x = Year, y = Abundance_Index), color = "darkblue", linewidth = 1) +
-  facet_wrap(~ Group, ncol = 3, scales = "free_y") +
+  facet_wrap(~ Group, ncol = 4, scales = "free_y") +
   facetted_pos_scales(
     y = list(
       Group == "Mammals" ~ scale_y_continuous(limits = c(0, 2)),
-      Group == "Birds" ~ scale_y_continuous(limits = c(0, 2)),
+      Group == "Birds" ~ scale_y_continuous(limits = c(0, 1.5)),
       Group == "Cartilaginous fish" ~ scale_y_continuous(limits = c(0, 2)),
       Group == "Exploited crustaceans" ~ scale_y_continuous(limits = c(0, 3)),
       Group == "Exploited fish" ~ scale_y_continuous(limits = c(0, 2)),
-      Group == "Non-exploited fish" ~ scale_y_continuous(limits = c(0, 3)),
+      Group == "Non-exploited fish" ~ scale_y_continuous(limits = c(0, 2)),
       Group == "Kelp" ~ scale_y_continuous(limits = c(0, 0.20)),
       Group == "Seagrasses" ~ scale_y_continuous(limits = c(0, 2)),
-      Group == "Turtles" ~ scale_y_continuous(limits = c(0, 3)),
+      Group == "Turtles" ~ scale_y_continuous(limits = c(0, 1.5)),
       Group == "Hard coral % cover" ~ scale_y_continuous(limits = c(0, 1.5)),
       Group == "Mangroves" ~ scale_y_continuous(limits = c(0, 1.2)),
       Group == "Salt marshes" ~ scale_y_continuous(limits = c(0, 1.2))
@@ -442,7 +442,9 @@ lambda_plot = stan_raw_df %>%
   filter(abs(mean_change)<10)%>%
   ggplot(aes(x=mean_change)) + geom_histogram() + facet_wrap(~Group, scales = "free_y") + 
   geom_vline(xintercept = 0, color = "red", linetype = "dashed") +
-  theme_classic() + labs(y="Number of populations",x="Mean change in abundance (log scale)");lambda_plot
+  theme_classic() + 
+  theme(legend.position = "bottom", strip.text = element_text(size = 12, face = "bold"), strip.background = element_blank()) +
+  labs(y="Number of populations",x="Mean change in abundance (log scale)");lambda_plot
 
 
 sensitivity_df = bind_rows(sensitivity_trends_list)

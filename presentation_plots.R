@@ -142,4 +142,96 @@ library(patchwork)
 final_plot <- (p1 | p2) + plot_layout(widths = c(1, 4))
 print(final_plot)
 
+df <- read.csv("data/IUCN_tbl.csv", check.names = FALSE)
 
+# 2. Reshape the data from wide to long format
+df_long <- df %>%
+  # Select only the grouping column and the IUCN category columns
+  select(`Number of Species`,`Species Group`, `Data Deficient`, `Not Threatened`, `Endangered`, `Not Evaluated`) %>%
+  mutate(`Species Group` = fct_reorder(`Species Group`, `Number of Species`, .desc = FALSE)) %>%
+  pivot_longer(
+    cols = c(`Data Deficient`, `Not Threatened`, `Endangered`, `Not Evaluated`),
+    names_to = "IUCN_Category",
+    values_to = "Count"
+  ) %>%
+  # Make the category a factor to control the stacking order (top to bottom or bottom to top)
+  mutate(IUCN_Category = factor(IUCN_Category, 
+                                levels = c("Not Evaluated", "Data Deficient", "Not Threatened", "Endangered")))
+
+# 3. Specify your custom colors for each IUCN category
+# You can change these to any R color names (e.g., "blue") or hex codes
+library(ggpattern)
+
+# 1. Define your colors
+# Note: Set "Not Evaluated" to "white" (or another background color) so the crosshatch is visible
+# 1. Define your colors (keeping "Not Evaluated" white as the background for the stripes)
+my_colors <- c(
+  "Not Evaluated"  = "white",   
+  "Data Deficient" = "#bdbec0", 
+  "Not Threatened" = "#0c6767", 
+  "Endangered"     = "#cf6834"  
+)
+
+# 2. Define your patterns - changed to "stripe"
+my_patterns <- c(
+  "Not Evaluated"  = "stripe",
+  "Data Deficient" = "none",
+  "Not Threatened" = "none",
+  "Endangered"     = "none"
+)
+
+# 3. Create the stacked barplot
+ggplot(df_long, aes(y = `Species Group`, x = Count, fill = IUCN_Category)) +
+  geom_col_pattern(
+    aes(pattern = IUCN_Category),
+    color = "grey50", 
+    lwd = 0.15,
+    pattern_fill = "black",     # The color of the stripes
+    pattern_color = NA,         # Use NA here to prevent drawing lines around the pattern block itself
+    pattern_density = 0.1,      # Adjust for thicker/thinner stripes
+    pattern_spacing = 0.02,     # Adjust for how close together the stripes are
+    pattern_angle = 45          # Angle of the stripes (45 = diagonal, 0 = horizontal, 90 = vertical)
+  ) + 
+  scale_fill_manual(values = my_colors) + 
+  scale_pattern_manual(values = my_patterns) + 
+  labs(
+    title = "IUCN Status by Species Group",
+    y = "Species Group",
+    x = "Number of Species",
+    fill = "IUCN Category",
+    pattern = "IUCN Category" 
+  ) +
+  theme_classic(base_size = 16) +
+  theme(
+    legend.position = c(0.85, 0.3),
+    panel.grid.major.x = element_blank(),
+    legend.key.size = unit(1.5, "cm") 
+  )
+
+
+ggplot(df_long %>% filter(`Species Group` %in% c("Elasmobranchs", "Birds","Mammals", "Reptiles")), aes(y = `Species Group`, x = Count, fill = IUCN_Category)) +
+  geom_col_pattern(
+    aes(pattern = IUCN_Category),
+    color = "grey50", 
+    lwd = 0.15,
+    pattern_fill = "black",     # The color of the stripes
+    pattern_color = NA,         # Use NA here to prevent drawing lines around the pattern block itself
+    pattern_density = 0.1,      # Adjust for thicker/thinner stripes
+    pattern_spacing = 0.02,     # Adjust for how close together the stripes are
+    pattern_angle = 45          # Angle of the stripes (45 = diagonal, 0 = horizontal, 90 = vertical)
+  ) + 
+  scale_fill_manual(values = my_colors) + 
+  scale_pattern_manual(values = my_patterns) + 
+  labs(
+    title = "IUCN Status by Species Group",
+    y = "Species Group",
+    x = "Number of Species",
+    fill = "IUCN Category",
+    pattern = "IUCN Category" 
+  ) +
+  theme_classic(base_size = 16) +
+  theme(
+    legend.position = "none",
+    panel.grid.major.x = element_blank(),
+    legend.key.size = unit(1.5, "cm") 
+  )
