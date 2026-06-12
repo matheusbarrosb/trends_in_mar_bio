@@ -388,9 +388,9 @@ group_mapping <- c(
   "Marine Mammals" = "Mammals",
   "marine birds" = "Birds",
   "turtle" = "Turtles",           
-  "elasmobranch" = "Cartilaginous fish",
-  "exploited fish" = "Exploited fish",
-  "non-exploited fish" = "Non-exploited fish",
+  "elasmobranch" = "Cartilaginous fishes",
+  "exploited fish" = "Exploited fishes",
+  "non-exploited fish" = "Non-exploited fishes",
   "Crustaceans" = "Exploited crustaceans",
   "Hard coral" = "Hard coral % cover",
   "kelp" = "Kelp",
@@ -407,22 +407,52 @@ combined_trends$Group <- factor(combined_trends$Group,
                                 levels = names(group_mapping), 
                                 labels = unname(group_mapping))
 
+benthic_infauna_output = read.csv("data/benthic_infauna_output.csv") %>%
+  mutate(Group = "Benthic infauna")
+
+combined_trends = bind_rows(combined_trends,benthic_infauna_output)
+
+# Define line colors and labels
+line_colors <- c(
+  "Abundance Index"        = "darkblue",
+  "SAR"          = "#e85d04",
+  "Double SAR"     = "#d00000",
+  "10x SAR for poor AIS"    = "#6a040f"
+)
+
 final_figure = ggplot() +
   geom_boxplot(data = stan_raw_df, aes(x = Year, y = Value_scale, group = Year, fill = fraction), outliers = FALSE, color = NA, linewidth = 0.3, width = 1) +
   scale_fill_gradient(low = "white", high = "forestgreen", name = "Coverage", limits = c(0, 1)) +
   ggnewscale::new_scale_fill() +
   stat_summary(data = stan_raw_df, aes(x = Year, y = Value_scale, group = Year), fun = median, geom = "point", color = "darkslategrey", size = 1, alpha = 0.8, shape = 19) +
   geom_ribbon(data = combined_trends, aes(x = Year, ymin = Lower_Bound, ymax = Upper_Bound), fill = "cornflowerblue", alpha = 0.3) +
-  geom_line(data = combined_trends, aes(x = Year, y = Abundance_Index), color = "darkblue", linewidth = 1) +
-  facet_wrap(~ Group, ncol = 4, scales = "free_y") +
+  geom_line(data = combined_trends,
+            aes(x = Year, y = Abundance_Index, color = "Abundance Index"),
+            linewidth = 1) +
+  geom_line(data = combined_trends,
+            aes(x = Year, y = Wmean, color = "SAR"),
+            linewidth = 1) +
+  geom_line(data = combined_trends,
+            aes(x = Year, y = WmeanDouble, color = "Double SAR"),
+            linewidth = 1) +
+  geom_line(data = combined_trends,
+            aes(x = Year, y = Wmean10, color = "10x SAR for poor AIS"),
+            linewidth = 1) +
+  scale_color_manual(
+    name   = "Trend lines",
+    values = line_colors,
+    breaks = names(line_colors)   #  legend order
+  ) +
+  facet_wrap(~ Group, ncol = 3, scales = "free_y") +
   facetted_pos_scales(
     y = list(
+      Group == "Benthic infauna" ~ scale_y_continuous(limits = c(0.75, 1)),
       Group == "Mammals" ~ scale_y_continuous(limits = c(0, 2)),
       Group == "Birds" ~ scale_y_continuous(limits = c(0, 1.5)),
-      Group == "Cartilaginous fish" ~ scale_y_continuous(limits = c(0, 2)),
+      Group == "Cartilaginous fishes" ~ scale_y_continuous(limits = c(0, 2)),
       Group == "Exploited crustaceans" ~ scale_y_continuous(limits = c(0, 3)),
-      Group == "Exploited fish" ~ scale_y_continuous(limits = c(0, 2)),
-      Group == "Non-exploited fish" ~ scale_y_continuous(limits = c(0, 2)),
+      Group == "Exploited fishes" ~ scale_y_continuous(limits = c(0, 2)),
+      Group == "Non-exploited fishes" ~ scale_y_continuous(limits = c(0, 2)),
       Group == "Kelp" ~ scale_y_continuous(limits = c(0, 0.20)),
       Group == "Seagrasses" ~ scale_y_continuous(limits = c(0, 2)),
       Group == "Turtles" ~ scale_y_continuous(limits = c(0, 1.5)),
@@ -432,7 +462,10 @@ final_figure = ggplot() +
     )
   ) +
   theme_classic() +
-  theme(legend.position = "bottom", strip.text = element_text(size = 12, face = "bold"), strip.background = element_blank()) +
+  guides(color = guide_legend(ncol = 2, byrow = FALSE)) +
+  theme(legend.position = c(0.7,0.05), legend.box = "horizontal",
+  strip.text = element_text(size = 14, face = "bold"), strip.background = element_blank(),
+  text = element_text(size = 14)) +
   labs(y = "Relative abundance / area", x = "Year");final_figure
 
 lambda_plot = stan_raw_df %>%
