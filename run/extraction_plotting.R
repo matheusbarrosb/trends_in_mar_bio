@@ -418,9 +418,20 @@ saltmarsh_d = read.csv(here("data", "abundance", "SaltMarshExtent.csv")) %>%
   ) %>%
   select(Group, Year, Abundance_Index, Lower_Bound, Upper_Bound)
 
-combined_trends = bind_rows(stan_trends_df, coral_d, mangrove_full, saltmarsh_d)
-combined_trends$Group = factor(combined_trends$Group, levels = c(taxa_groups, "Hard coral", "Mangroves", "Salt marsh"))
-stan_raw_df$Group = factor(stan_raw_df$Group, levels = c(taxa_groups, "Hard coral", "Mangroves", "Salt marsh"))
+# extract cephalopod data
+cephalopod_d = read.csv("data/cephalopod_estimates.csv") %>%
+  drop_na(Mean_scaled_mean) %>%
+  mutate(
+    Group = "Cephalopods",
+    Abundance_Index = exp(Mean_scaled_mean),
+    Lower_Bound = NA_real_,
+    Upper_Bound = NA_real_
+  ) %>%
+  select(Group, Year, Abundance_Index, Lower_Bound, Upper_Bound)
+
+combined_trends = bind_rows(stan_trends_df, coral_d, mangrove_full, saltmarsh_d, cephalopod_d)
+combined_trends$Group = factor(combined_trends$Group, levels = c(taxa_groups, "Hard coral", "Mangroves", "Salt marsh", "Cephalopods"))
+stan_raw_df$Group = factor(stan_raw_df$Group, levels = c(taxa_groups, "Hard coral", "Mangroves", "Salt marsh", "Cephalopods"))
 
 group_mapping <- c(
   "Marine Mammals" = "Mammals",
@@ -434,7 +445,8 @@ group_mapping <- c(
   "kelp" = "Kelp",
   "seagrass" = "Seagrasses",
   "Mangroves" = "Mangroves",
-  "Salt marsh" = "Salt marshes"
+  "Salt marsh" = "Salt marshes",
+  "Cephalopods" = "Cephalopods"
 )
 
 stan_raw_df$Group <- factor(stan_raw_df$Group, 
@@ -496,15 +508,21 @@ final_figure = ggplot() +
       Group == "Turtles" ~ scale_y_continuous(limits = c(0, 1.5)),
       Group == "Hard coral % cover" ~ scale_y_continuous(limits = c(0, 1.5)),
       Group == "Mangroves" ~ scale_y_continuous(limits = c(0, 1.2)),
-      Group == "Salt marshes" ~ scale_y_continuous(limits = c(0, 1.2))
+      Group == "Salt marshes" ~ scale_y_continuous(limits = c(0, 1.2)),
+      Group == "Cephalopods" ~ scale_y_continuous(limits = c(0, 3))
     )
   ) +
   theme_classic() +
   guides(color = guide_legend(ncol = 2, byrow = FALSE)) +
-  theme(legend.position = c(0.7,0.05), legend.box = "horizontal",
-  strip.text = element_text(size = 14, face = "bold"), strip.background = element_blank(),
-  text = element_text(size = 14)) +
+  #theme(legend.position = c(0.7,0.05), legend.box = "horizontal",
+  #strip.text = element_text(size = 14, face = "bold"), strip.background = element_blank(),
+  #text = element_text(size = 14)) +
+  theme(legend.position = "bottom", legend.box = "horizontal",
+        strip.text = element_text(size = 14, face = "bold"), strip.background = element_blank(),
+        text = element_text(size = 14)) +
   labs(y = "Relative abundance / area", x = "Year");final_figure
+
+ggsave(final_figure, filename = here("res", "figures", "final_figure.png"), width = 8, height = 9, dpi = 300)
 
 lambda_plot = stan_raw_df %>%
   group_by(ID,Group) %>%
