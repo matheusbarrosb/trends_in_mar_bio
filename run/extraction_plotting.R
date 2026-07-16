@@ -353,12 +353,50 @@ coral_d = read.csv(here("data", "abundance", "souter-et-al_data-models.csv")) %>
   filter(Year >= 1980) %>%
   select(Group, Year, Abundance_Index, Lower_Bound, Upper_Bound)
 
-mangrove_d = readxl::read_xlsx(here("data", "abundance", "gmw_v3_country_statistics_ha.xlsx")) %>%
+# mangrove_d = readxl::read_xlsx(here("data", "abundance", "gmw_v3_country_statistics_ha.xlsx")) %>%
+#   pivot_longer(cols = matches("^\\d{4}$"), names_to = "Year", values_to = "Area") %>%
+#   filter(Name == "Global (km2)") %>% drop_na(Area) %>%
+#   mutate(Group = "Mangrove", Year = as.numeric(Year), Abundance_Index = (Area)/mean(Area), Lower_Bound = NA, Upper_Bound = NA) %>%
+#   filter(Year >= 1995) %>%
+#   select(Group, Year, Abundance_Index, Lower_Bound, Upper_Bound)
+
+mangrove_d = readxl::read_xlsx("data/abundance/gmw_v3_country_statistics_ha.xlsx") %>%
   pivot_longer(cols = matches("^\\d{4}$"), names_to = "Year", values_to = "Area") %>%
-  filter(Name == "Global (km2)") %>% drop_na(Area) %>%
-  mutate(Group = "Mangrove", Year = as.numeric(Year), Abundance_Index = (Area)/mean(Area), Lower_Bound = NA, Upper_Bound = NA) %>%
-  filter(Year >= 1995) %>%
-  select(Group, Year, Abundance_Index, Lower_Bound, Upper_Bound)
+  filter(Name == "Global (ha)") %>%
+  drop_na(Area) %>%
+  mutate(Year = as.numeric(Year),
+         Abundance_Index = (Area)/mean(Area), 
+         Lower_Bound = (Area)/mean(Area), 
+         Upper_Bound = (Area)/mean(Area)) %>% 
+  ungroup() %>%
+  mutate(Source = "GMW")
+
+mangrove_d2 = readxl::read_xlsx("data/abundance/mangrove_FAO_ha.xlsx") 
+
+mangrove_full = bind_rows(mangrove_d,mangrove_d2) %>%
+  group_by(Source) %>%
+  arrange(Source, Year) %>%
+  complete(Year = min(Year):max(Year)) %>%
+  mutate(Area_Interp = approx(Year, Area, xout = Year)$y) %>%
+  mutate(lambda = Area_Interp/lag(Area_Interp)) %>%
+  group_by(Year) %>%
+  summarise(lambda_mean = mean(lambda,na.rm=T)) %>%
+  mutate(lambda_mean = ifelse(is.na(lambda_mean), 1, lambda_mean))  %>%
+  mutate(Abundance_Index = cumprod(lambda_mean)) %>%
+  mutate(Lower_Bound = Abundance_Index, Upper_Bound = Abundance_Index) %>%
+  mutate(Group = "Mangroves") 
+
+mangrove_points = bind_rows(mangrove_d, mangrove_d2) %>%
+  select(Source, Year, Area) %>%
+  drop_na(Area) %>%
+  left_join(mangrove_full %>% select(Year, Abundance_Index), by = "Year") %>%
+  group_by(Source) %>%
+  mutate(Value_scale = (Area / first(Area)) * first(Abundance_Index)) %>%
+  ungroup() %>%
+  mutate(Group = "Mangroves") 
+
+
+stan_raw_df = bind_rows(stan_raw_df, mangrove_points)
 
 saltmarsh_d = read.csv(here("data", "abundance", "SaltMarshExtent.csv")) %>%
   summarise(`2000-2004` = sum(`Area_2000.2004.Ha`, na.rm = TRUE),
@@ -380,9 +418,9 @@ saltmarsh_d = read.csv(here("data", "abundance", "SaltMarshExtent.csv")) %>%
   ) %>%
   select(Group, Year, Abundance_Index, Lower_Bound, Upper_Bound)
 
-combined_trends = bind_rows(stan_trends_df, coral_d, mangrove_d, saltmarsh_d)
-combined_trends$Group = factor(combined_trends$Group, levels = c(taxa_groups, "Hard coral", "Mangrove", "Salt marsh"))
-stan_raw_df$Group = factor(stan_raw_df$Group, levels = c(taxa_groups, "Hard coral", "Mangrove", "Salt marsh"))
+combined_trends = bind_rows(stan_trends_df, coral_d, mangrove_full, saltmarsh_d)
+combined_trends$Group = factor(combined_trends$Group, levels = c(taxa_groups, "Hard coral", "Mangroves", "Salt marsh"))
+stan_raw_df$Group = factor(stan_raw_df$Group, levels = c(taxa_groups, "Hard coral", "Mangroves", "Salt marsh"))
 
 group_mapping <- c(
   "Marine Mammals" = "Mammals",
@@ -395,7 +433,7 @@ group_mapping <- c(
   "Hard coral" = "Hard coral % cover",
   "kelp" = "Kelp",
   "seagrass" = "Seagrasses",
-  "Mangrove" = "Mangroves",
+  "Mangroves" = "Mangroves",
   "Salt marsh" = "Salt marshes"
 )
 
